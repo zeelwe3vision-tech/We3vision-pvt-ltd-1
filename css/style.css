@@ -71,7 +71,7 @@ body {
   font-family: "Outfit", sans-serif;
   font-size: 16px;
   font-weight: 300;
-  color: rgba(0, 0, 0, 0.5);
+  color: #0000ff9a;
   line-height: 150%;
       overscroll-behavior: none;
   background: linear-gradient(135deg, #f5f7fa 0%, #f7e1f5 40%, #e0f7fa 100%);
@@ -146,7 +146,7 @@ h5,
 h6,
 .mil-h6 {
   font-family: "Outfit", sans-serif;
-  color: rgb(0, 0, 0);
+  color: #2A2BC7;
   font-weight: 500;
   line-height: 120%;
 }
@@ -392,7 +392,7 @@ a {
 }
 
 .mil-marker {
-  background-color: rgb(255, 152, 0);
+  background: linear-gradient(135deg, #F3D7FF, #E2BAD2, #F9C5C5, #C9C9F4);
   padding: 0 5px;
 }
 
@@ -550,7 +550,7 @@ button
   border: none;
   letter-spacing: 2px;
   font-size: 12px;
-  background-color: rgb(255, 152, 0);
+  background: linear-gradient(135deg, #F3D7FF, #E2BAD2, #F9C5C5, #C9C9F4);
   color: rgb(0, 0, 0);
   border-radius: 70px;
   padding: 0 15px 0 50px;
@@ -568,11 +568,11 @@ button
   width: 40px;
   height: 40px;
   padding: 10px;
-  background-color: rgb(0, 0, 0);
+  background: linear-gradient(135deg, #A80C4C, #090939, #421256, #531C9B);
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
 }
 .mil-button svg path {
-  fill: rgb(255, 152, 0);
+  fill: #F3D7FF;
 }
 .mil-button.mil-icon-button {
   padding: 15px;
@@ -586,7 +586,7 @@ button
 }
 .mil-button.mil-icon-button-sm svg {
   margin-left: 0;
-  background-color: rgb(255, 152, 0);
+  background: linear-gradient(135deg, #F3D7FF, #E2BAD2, #F9C5C5, #C9C9F4);
 }
 .mil-button.mil-icon-button-sm svg path {
   fill: rgb(0, 0, 0);
@@ -742,6 +742,7 @@ backgrounds
   position: relative;
   pointer-events: none;
   z-index: 3;
+  background: linear-gradient(135deg, #A80C4C, #090939, #421256, #531C9B);
 }
 .mil-dark-bg .mi-invert-fix .container {
   pointer-events: all;
@@ -979,7 +980,7 @@ preloader
   position: absolute;
   opacity: 0;
   height: 100%;
-  background-color: rgb(255, 152, 0);
+  background: linear-gradient(135deg, #F3D7FF, #E2BAD2, #F9C5C5, #C9C9F4);
 }
 .mil-preloader.mil-hidden {
   pointer-events: none;
@@ -1066,7 +1067,7 @@ scrollbar
 .mil-progress-track .mil-progress {
   width: 4px;
   height: 0;
-  background-color: rgb(255, 152, 0);
+  background: linear-gradient(135deg, #F3D7FF, #E2BAD2, #F9C5C5, #C9C9F4);
 }
 @media screen and (max-width: 992px) {
   .mil-progress-track {
@@ -1394,7 +1395,7 @@ menu
 }
 .mil-main-menu ul li a.mil-active:before {
           transform: scale(1);
-  background-color: rgb(255, 152, 0);
+  background: linear-gradient(135deg, #F3D7FF, #E2BAD2, #F9C5C5, #C9C9F4);
 }
 .mil-main-menu ul li.mil-active > a {
   color: rgb(255, 152, 0);
@@ -1906,7 +1907,7 @@ about
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: rgb(255, 152, 0);
+  background: linear-gradient(135deg, #F3D7FF, #E2BAD2, #F9C5C5, #C9C9F4);
   position: absolute;
   bottom: 0;
   right: 0;
@@ -2042,7 +2043,7 @@ services
   left: 0;
   height: 4px;
   width: 0;
-  background-color: rgb(255, 152, 0);
+  background: linear-gradient(135deg, #F3D7FF, #E2BAD2, #F9C5C5, #C9C9F4);
   transition: 0.6s cubic-bezier(0, 0, 0.3642, 1);
 }
 .mil-service-card-sm:hover p {
@@ -2130,7 +2131,7 @@ services
   padding-right: 0;
 }
 .mil-service-card-lg.mil-other-card:hover {
-  background-color: rgb(255, 152, 0);
+  background: linear-gradient(135deg, #F3D7FF, #E2BAD2, #F9C5C5, #C9C9F4);
 }
 .mil-service-card-lg.mil-other-card:hover .mil-link svg {
   background-color: rgb(0, 0, 0);
@@ -2183,7 +2184,7 @@ team
   left: 0;
   height: 4px;
   width: 0;
-  background-color: rgb(255, 152, 0);
+  background: linear-gradient(135deg, #F3D7FF, #E2BAD2, #F9C5C5, #C9C9F4);
   transition: 0.6s cubic-bezier(0, 0, 0.3642, 1);
 }
 .mil-team-card img {
@@ -2541,7 +2542,7 @@ blog
 }
 
 .mil-pagination-btn.mil-active {
-  background-color: rgb(255, 152, 0);
+  background: linear-gradient(135deg, #F3D7FF, #E2BAD2, #F9C5C5, #C9C9F4);
 }
 
 .mil-category-list {
@@ -2573,7 +2574,7 @@ blog
   background-color: rgb(229, 229, 229);
 }
 .mil-category-list li a.mil-active {
-  background-color: rgb(255, 152, 0);
+  background: linear-gradient(135deg, #F3D7FF, #E2BAD2, #F9C5C5, #C9C9F4);
 }
 @media screen and (max-width: 768px) {
   .mil-category-list {
