@@ -25,7 +25,7 @@
 <body>
 
     <!-- Responsive Header Bar Start -->
-    <div class="header-bar">
+       <div class="header-bar">
       <div class="logo">A.</div>
       <button class="menu-toggle" aria-label="Open menu">
         <span></span>
@@ -41,39 +41,187 @@
             <a href="portfolio-3.html">Portfolio Slider</a>
           </div>
         </div>
+
+
         <a href="about.html" class="nav-item">About Us <span class="chevron-arrow"></span></a>
 
-        <div class="dropdown">
-            <a href="#" class="dropdown-toggle" id="servicesDropdown"><span>Service</span><span class="chevron-arrow"></span></a>
-            <div class="dropdown-menu" id="servicesDropdownMenu">
-              <a href="services.html">Services List</a>
-              <a href="service.html">Single Service</a>
-              <a href="design-animation.html">Design & Animation</a>
-              <a href="#">Web & App Development</a>
-              <a href="#">Immersive Technologies</a>
-              <a href="#">Game Development</a>
-              <a href="#">Enterprise Solutions</a>
-              <a href="#">Digital Marketing</a>
-              <a href="#">Rebranding & Redeveloping</a>
-            </div>
-        </div>
+        
+        <div class="dropdown" id="servicesDropdown">
+          <a href="#" class="dropdown-toggle">Services <span class="chevron-arrow"></span></a>
+          <div class="dropdown-menu mega-menu" id="servicesDropdownMenu">
+            <div class="mega-menu-content">
+              <div class="mega-menu-categories">
+                <ul>
+                  <li class="active" data-category="design">Design & Animation</li>
+                  <li data-category="web">Web & App Development</li>
+                  <li data-category="imm">Immersive Technologies</li>
+                  <li data-category="game">Game Development</li>
+                  <li data-category="enter">Enterprise Solutions</li>
+                  <li data-category="digital">Digital Marketing</li>
+                  <li data-category="rebrand">Rebranding & Redeveloping</li>
 
-        <div class="dropdown">
-          <a href="#" class="dropdown-toggle" id="technologiesDropdown">
-            <span>Technologies</span>
-            <span class="chevron-arrow"></span>
-          </a>
-          <div class="dropdown-menu" id="technologiesDropdownMenu">
-            <a href="#">Design & Animation</a>
-            <a href="#">Web & App Development</a>
-            <a href="#">Immersive Technologies</a>
-            <a href="#">Game Development</a>
-            <a href="#">Enterprise Solutions</a>
-            <a href="#">Digital Marketing</a>
-            <a href="#">Rebranding & Redeveloping</a>
+                </ul>
+              </div>
+              <div class="mega-menu-details">
+                <div class="mega-menu-panel" data-category="design">
+                  <h4>Design & Animation</h4>
+                  <ul>
+                    <li><a href="2d-3d-animation.html">2D & 3D Animation</a></li>
+                    <li><a href="cgi-video-production.html">CGI & Video Production</a></li>
+                    <li><a href="graphics-uiux-design.html">Graphics and UI/UX Design</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-panel" data-category="web" >
+                  <h4>Web & App Development</h4>
+                  <ul>
+                    <li><a href="web-development.html">Web Development</a></li>
+                    <li><a href="mobile-app-development.html">Mobile App Development</a></li>
+                    <li><a href="software-development.html">Software Development</a></li>
+                    <li><a href="low-code-no-code-development.html">Low Code No Code Development</a></li>
+                    <li><a href="custom-erp-software-development-services.html">Custom ERP Software Development Services</a></li>
+                    <li><a href="saas-development-services.html">SaaS Development Services</a></li>
+                    <li><a href="shopify-development.html">Shopify Development</a></li>
+                    <li><a href="wordpress-development.html">WordPress Development</a></li>
+                    <li><a href="ai-development.html">AI Development</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-panel" data-category="imm">
+                    <h4>Immersive Technologies</h4>
+                    <ul>
+                      <li><a href="ar-augmented-reality.html">AR (Augmented Reality)</a></li>
+                      <li><a href="vr-virtual-reality.html">VR (Virtual Reality)</a></li>
+                      <li><a href="xr-extended-reality.html">XR (Extended Reality)</a></li>
+                      <li><a href="mr-mixed-reality.html">MR (Mixed Reality)</a></li>
+                      <li><a href="metaverse-solutions.html">Metaverse Solutions</a></li>
+                      <li><a href="nft-game-development.html">NFT Game Development</a></li>
+                      <li><a href="nft-marketplace-development.html">NFT Marketplace Development</a></li>
+                      <li><a href="immersive-marketing.html">Immersive Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="mega-menu-panel" data-category="game">
+                    <h4>Game Development</h4>
+                    <ul>
+                      <li><a href="android-game-development.html">Android Game Development</a></li>
+                      <li><a href="ios-game-development.html">iOS Game Development</a></li>
+                      <li><a href="metaverse-game-development.html">Metaverse Game Development</a></li>                      
+                    </ul>
+                </div>
+                <div class="mega-menu-panel" data-category="enter">
+                    <h4>Enterprise Solutions</h4>
+                    <ul>
+                      <li><a href="crm-development.html">CRM Development</a></li>
+                      <li><a href="erp-development-custom-software.html">ERP DevelopmentCustom Software</a></li>
+                      <li><a href="development.html">Development</a></li>                      
+                    </ul>
+                </div>
+                <div class="mega-menu-panel" data-category="digital">
+                    <h4>Digital Marketing</h4>
+                    <ul>
+                      <li><a href="seo-search-engine-optimization.html">SEO (Search Engine Optimization)</a></li>
+                      <li><a href="digital-marketing-strategy.html">Digital Marketing Strategy</a></li>
+                      <li><a href="immersive-marketing.html">Immersive Marketing</a></li>                      
+                    </ul>
+                </div>
+                <div class="mega-menu-panel" data-category="rebrand">
+                    <h4>Rebranding & Redeveloping</h4>
+                    <ul>
+                      <li><a href="website-redesign.html">Website Redesign</a></li>
+                      <li><a href="brand-identity-refresh.html">Brand Identity Refresh</a></li>
+                      <li><a href="technology-migration.html">Technology Migration</a></li>                      
+                    </ul>
+                </div>
+                <!-- Add more panels for other categories -->
+              </div>
+            </div>
           </div>
         </div>
 
+        <div class="dropdown" id="technologiesDropdown">
+          <a href="#" class="dropdown-toggle">Technologies <span class="chevron-arrow"></span></a>
+          <div class="dropdown-menu mega-menu" id="technologiesDropdownMenu">
+            <div class="mega-menu-content">
+              <div class="mega-menu-categories tech-categories">
+                <ul>
+                  <li class="active" data-category="design-tech">Design & Animation</li>
+                  <li data-category="web-tech">Web & App Development</li>
+                  <li data-category="imm-tech">Immersive Technologies</li>
+                  <li data-category="game-tech">Game Development</li>
+                  <li data-category="enter-tech">Enterprise Solutions</li>
+                  <li data-category="digital-tech">Digital Marketing</li>
+                  <li data-category="rebrand-tech">Rebranding & Redeveloping</li>
+                </ul>
+              </div>
+              <div class="mega-menu-details tech-details">
+                <div class="mega-menu-panel tech-panel" data-category="design-tech">
+                  <h4>Design & Animation</h4>
+                  <ul>
+                    <li><a href="#">2D & 3D Animation</a></li>
+                    <li><a href="#">CGI & Video Production</a></li>
+                    <li><a href="#">Graphics and UI/UX Design</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-panel tech-panel" data-category="web-tech">
+                  <h4>Web & App Development</h4>
+                  <ul>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Mobile App Development</a></li>
+                    <li><a href="#">Software Development</a></li>
+                    <li><a href="#">Low Code/No Code,</a></li>
+                    <li><a href="#">ERP & SaaS </a></li>
+                    <li><a href="#">Shopify</a></li>
+                    <li><a href="#">WordPress</a></li>
+                    <li><a href="#">AI Development</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-panel tech-panel" data-category="imm-tech">
+                  <h4>Immersive Technologies</h4>
+                  <ul>
+                    <li><a href="#">AR</a></li>
+                    <li><a href="#">VR</a></li>
+                    <li><a href="#">XR</a></li>
+                    <li><a href="#">MR</a></li>
+                    <li><a href="#">Metaverse Solutions</a></li>
+                    <li><a href="#">NFT Game Dev</a></li>
+                    <li><a href="#">NFT Marketplace</a></li>
+                    <li><a href="#">Immersive Marketing</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-panel tech-panel" data-category="game-tech">
+                  <h4>Game Development</h4>
+                  <ul>
+                    <li><a href="#"> Android Game Dev</a></li>
+                    <li><a href="#">IOS Game Dev</a></li>
+                    <li><a href="#">Metaverse Game Dev</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-panel tech-panel" data-category="enter-tech">
+                  <h4>Enterprise Solutions</h4>
+                  <ul>
+                    <li><a href="#">CRM Development</a></li>
+                    <li><a href="#">ERP Development</a></li>
+                    <li><a href="#">Custom Software Development</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-panel tech-panel" data-category="digital-tech">
+                  <h4>Digital Marketing</h4>
+                  <ul>
+                    <li><a href="#">SEO</a></li>
+                    <li><a href="#">Digital Strategy</a></li>
+                    <li><a href="#">Immersive Marketing</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-panel tech-panel" data-category="rebrand-tech">
+                  <h4>Rebranding & Redeveloping</h4>
+                  <ul>
+                    <li><a href="#">Website Redesign</a></li>
+                    <li><a href="#">Brand Identity Refresh</a></li>
+                    <li><a href="#">Technology Migration</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div class="dropdown">
           <a href="#" class="dropdown-toggle" id="portfolioDropdown"><span>Portfolio</span><span class="chevron-arrow"></span></a>
