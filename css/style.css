@@ -3830,3 +3830,37 @@ html.is-animating .mil-menu-frame {
     border-bottom: 1px solid #eee;
   }
 }
+
+/* Technology Section Styles */
+.tech-section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.tech-heading {
+  font-size: 2.5rem;
+  color: #2d0066;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.tech-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  justify-items: center;
+  margin-bottom: 60px;
+}
+.tech-card {
+  background: #ffe4ec;
+  border-radius: 16px;
+  padding: 32px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 120px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  font-weight: 600;
+  color: #2d0066;
+  font-size: 1.1rem;
+}
