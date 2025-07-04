@@ -1065,6 +1065,24 @@
       }
     });
     </script>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const technologiesDropdown = document.getElementById('technologiesDropdown');
+      const technologiesDropdownMenu = document.getElementById('technologiesDropdownMenu');
+      technologiesDropdown.addEventListener('click', function(e) {
+        e.preventDefault();
+        technologiesDropdownMenu.classList.toggle('show');
+      });
+
+      // Optional: Close dropdown when clicking outside
+      document.addEventListener('click', function(e) {
+        if (!technologiesDropdown.contains(e.target) && !technologiesDropdownMenu.contains(e.target)) {
+          technologiesDropdownMenu.classList.remove('show');
+        }
+      });
+    });
+    </script>
 
 </body>
 
