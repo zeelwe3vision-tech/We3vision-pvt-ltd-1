@@ -5017,3 +5017,373 @@ html.is-animating .mil-menu-frame {
 =======
 }
 >>>>>>> Stashed changes
+/*our services*/
+.ar-timeline-v2 {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+.ar-timeline-v2:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, #e65cff 0%, #5cffe6 100%);
+    z-index: 0;
+    border-radius: 2px;
+}
+.ar-timeline-v2-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 60px;
+    z-index: 1;
+}
+.ar-timeline-v2-row.left .ar-timeline-v2-content {
+    order: 1;
+    text-align: right;
+    flex: 0 0 40%;
+}
+.ar-timeline-v2-row.left .ar-timeline-v2-marker {
+    order: 2;
+}
+.ar-timeline-v2-row.left .ar-timeline-v2-checklist {
+    order: 3;
+    flex: 0 0 40%;
+}
+.ar-timeline-v2-row.right .ar-timeline-v2-checklist {
+    order: 1;
+    flex: 0 0 40%;
+    text-align: right;
+}
+.ar-timeline-v2-row.right .ar-timeline-v2-marker {
+    order: 2;
+}
+.ar-timeline-v2-row.right .ar-timeline-v2-content {
+    order: 3;
+    text-align: left;
+    flex: 0 0 40%;
+}
+.ar-timeline-v2-marker {
+    flex: 0 0 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+.ar-marker-circle {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 0 2px 16px 0 rgba(0,0,0,0.18);
+    border: 4px solid #181828;
+}
+.ar-step-title-v2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.ar-step-num-v2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.ar-step-main {
+    color: #fff;
+    font-weight: 700;
+}
+.ar-step-desc-v2 {
+    color: #d1d1e0;
+    margin-bottom: 0;
+    font-size: 1.05rem;
+}
+.ar-timeline-v2-checklist ul {
+    background: rgba(40,40,50,0.95);
+    border-radius: 16px;
+    padding: 22px 32px;
+    color: #fff;
+    list-style: none;
+    margin: 0;
+    font-size: 1.08rem;
+    box-shadow: 0 2px 16px 0 rgba(0,0,0,0.10);
+}
+.ar-timeline-v2-checklist ul li {
+    margin-bottom: 14px;
+    position: relative;
+    padding-left: 28px;
+    font-weight: 500;
+}
+.ar-timeline-v2-checklist ul li:before {
+    content: '\2713';
+    color: #5cffb0;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+@media (max-width: 1100px) {
+    .ar-timeline-v2-row.left .ar-timeline-v2-content,
+    .ar-timeline-v2-row.left .ar-timeline-v2-checklist,
+    .ar-timeline-v2-row.right .ar-timeline-v2-content,
+    .ar-timeline-v2-row.right .ar-timeline-v2-checklist {
+        flex: 0 0 44%;
+    }
+}
+@media (max-width: 900px) {
+    .ar-timeline-v2 {
+        max-width: 100%;
+    }
+    .ar-timeline-v2-row {
+        flex-direction: column;
+        margin-bottom: 32px;
+        align-items: stretch;
+    }
+    .ar-timeline-v2-row.left .ar-timeline-v2-content,
+    .ar-timeline-v2-row.left .ar-timeline-v2-checklist,
+    .ar-timeline-v2-row.right .ar-timeline-v2-content,
+    .ar-timeline-v2-row.right .ar-timeline-v2-checklist {
+        flex: 1 1 100%;
+        text-align: left !important;
+    }
+    .ar-timeline-v2-marker {
+        margin: 18px 0;
+    }
+}
+/* Enhanced Industries We Serve Section Styles */
+.industries-section {
+  background: linear-gradient(135deg, #A80C4C, #090939, #421256, #531C9B);
+  margin-top: 40px;
+  text-align: center;
+}
+.industries-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 36px;
+  justify-items: center;
+  margin-top: 48px;
+  margin-bottom: 60px;
+}
+.industries-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 36px 22px 30px 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 180px;
+  box-shadow: 0 4px 32px 0 rgba(42,43,199,0.10), 0 1.5px 6px rgba(199,42,140,0.08);
+  font-weight: 500;
+  color: #2A2BC7;
+  font-size: 1.08rem;
+  position: relative;
+  border-top: 6px solid #C72A8C;
+  transition: transform 0.35s cubic-bezier(.77,0,.18,1), box-shadow 0.35s, background 0.35s, color 0.2s;
+  opacity: 0;
+  transform: translateY(50px) scale(0.98);
+  animation: none;
+  overflow: hidden;
+}
+.industries-card:hover {
+  transform: translateY(-10px) scale(1.04);
+  box-shadow: 0 12px 48px 0 rgba(42,43,199,0.18), 0 2.5px 12px rgba(199,42,140,0.13);
+  background: linear-gradient(135deg, #C72A8C 0%, #2A2BC7 100%);
+  color: #fff;
+}
+.industries-card:hover .industries-title,
+.industries-card:hover .industries-desc {
+  color: #fff;
+}
+.industries-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #C72A8C;
+  margin-bottom: 12px;
+  letter-spacing: 0.01em;
+  transition: color 0.2s;
+  text-shadow: 0 2px 8px rgba(42,43,199,0.04);
+}
+.industries-desc {
+  color: #2A2BC7;
+  font-size: 1.08rem;
+  font-weight: 400;
+  opacity: 0.96;
+  transition: color 0.2s;
+  line-height: 1.6;
+}
+.industries-card::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 6px;
+  border-radius: 20px 20px 0 0;
+  background: linear-gradient(90deg, #C72A8C 0%, #2A2BC7 100%);
+  z-index: 1;
+  opacity: 0.7;
+}
+.industries-card:hover::before {
+  opacity: 1;
+}
+.mil-fade-in-up {
+  opacity: 0;
+  transform: translateY(50px) scale(0.98);
+  animation: milFadeInUp 1.1s cubic-bezier(.77,0,.18,1) forwards;
+}
+.industries-card.mil-fade-in-up {
+  animation-name: milFadeInUp;
+}
+@keyframes milFadeInUp {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (max-width: 900px) {
+  .industries-card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 18px;
+  }
+  .industries-card {
+    padding: 18px 8px 14px 8px;
+    font-size: 1rem;
+    min-height: 120px;
+  }
+  .industries-title {
+    font-size: 1.1rem;
+  }
+  .industries-desc {
+    font-size: 0.98rem;
+  }
+}
+/* Technologies We Use Section Styles */
+.tech-section {
+  background: linear-gradient(135deg, #f5f7fa 0%, #f7e1f5 40%, #e0f7fa 100%);
+  margin-bottom: 40px;
+  text-align: center;
+}
+.tech-heading {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 40px;
+  letter-spacing: 0.01em;
+}
+
+.tech-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 32px;
+  justify-items: center;
+  margin-bottom: 60px;
+}
+.tech-card {
+  background: linear-gradient(135deg, #fff2fe 0%, #e0f7fa 100%);
+  margin-top: 20px;
+  border-radius: 18px;
+  padding: 32px 16px 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  min-height: 160px;
+  box-shadow: 0 2px 12px rgba(42,43,199,0.07);
+  font-weight: 600;
+  color: #2A2BC7;
+  font-size: 1.1rem;
+  position: relative;
+  transition: transform 0.3s cubic-bezier(.77,0,.18,1), box-shadow 0.3s;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: none;
+}
+.tech-card img {
+  margin-bottom: 12px;
+  width: 48px;
+  height: 48px;
+}
+.tech-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 8px 32px rgba(42,43,199,0.13);
+  background: linear-gradient(135deg, #C72A8C 0%, #2A2BC7 100%);
+  color: #fff;
+}
+.tech-card:hover div {
+  color: #fff;
+}
+.ar-tech-section {
+  background: #181828;
+}
+.ar-tech-title {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+
+@media (max-width: 900px) {
+  .ar-tech-grid {
+      gap: 18px;
+  }
+  .ar-tech-card {
+      width: 44vw;
+      min-width: 140px;
+      min-height: 140px;
+  }
+}
+@media (max-width: 600px) {
+  .ar-tech-title {
+      font-size: 1.5rem;
+  }
+  .ar-tech-card {
+      width: 90vw;
+      min-width: 100px;
+      min-height: 100px;
+  }
+}
+
+/* Animation for fade-in-up */
+.mil-fade-in-up {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: milFadeInUp 0.9s cubic-bezier(.77,0,.18,1) forwards;
+}
+.tech-card.mil-fade-in-up {
+  animation-name: milFadeInUp;
+}
+@keyframes milFadeInUp {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .tech-card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 18px;
+  }
+  .tech-card {
+    width: 100%;
+    min-width: 0;
+    padding: 24px 8px 18px 8px;
+    font-size: 1rem;
+  }
+}
+
