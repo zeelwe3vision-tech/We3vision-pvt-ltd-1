@@ -820,7 +820,7 @@ backgrounds
   z-index: 3;
   background: linear-gradient(135deg, #A80C4C, #090939, #421256, #531C9B);
 }
-}
+
 .mil-dark-bg .mi-invert-fix .container {
   pointer-events: all;
 }
@@ -5015,7 +5015,6 @@ html.is-animating .mil-menu-frame {
   }
 }
 =======
-}
 >>>>>>> Stashed changes
 /*our services*/
 .ar-timeline-v2 {
