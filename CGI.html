@@ -922,5 +922,69 @@
     });
     </script>
 
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Helper to close header bar nav on mobile
+      function closeHeaderBarNavIfMobile() {
+        var nav = document.querySelector('.header-bar nav');
+        if (nav.classList.contains('open') && window.innerWidth <= 900) {
+          nav.classList.remove('open');
+        }
+      }
+
+      // For Services Mega Menu
+      document.querySelectorAll('#servicesDropdownMenu .mega-menu-panel a').forEach(function(link) {
+        link.addEventListener('click', function() {
+          closeHeaderBarNavIfMobile();
+        });
+      });
+
+      // For Technologies Mega Menu
+      document.querySelectorAll('#technologiesDropdownMenu .mega-menu-panel a').forEach(function(link) {
+        link.addEventListener('click', function() {
+          closeHeaderBarNavIfMobile();
+        });
+      });
+    });
+    </script>
+
+    <script>
+    // Helper to close header bar nav on mobile
+    function closeHeaderBarNavIfMobile() {
+      var nav = document.querySelector('.header-bar nav');
+      if (nav.classList.contains('open') && window.innerWidth <= 900) {
+        nav.classList.remove('open');
+      }
+    }
+
+    // For Home Dropdown
+    document.querySelectorAll('#homeDropdownMenu a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        closeHeaderBarNavIfMobile();
+      });
+    });
+
+    // For Portfolio Dropdown
+    document.querySelectorAll('#portfolioDropdownMenu a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        closeHeaderBarNavIfMobile();
+      });
+    });
+
+    // For Blog Dropdown
+    document.querySelectorAll('#newsletterDropdownMenu a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        closeHeaderBarNavIfMobile();
+      });
+    });
+
+    // For Company Dropdown
+    document.querySelectorAll('#pagesDropdownMenu a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        closeHeaderBarNavIfMobile();
+      });
+    });
+    </script>
+
 </body>
 </html>
