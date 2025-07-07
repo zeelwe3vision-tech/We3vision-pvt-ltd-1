@@ -21,21 +21,205 @@
 <body>
     <!-- Responsive Header Bar Start -->
     <div class="header-bar">
-      <div class="logo">W3V</div>
-      <button class="menu-toggle" aria-label="Open menu"></button>
+      <div class="logo">A.</div>
+      <button class="menu-toggle" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <nav>
         <div class="dropdown">
-          <a href="home-1.html" id="homeDropdown">Home</a>
+          <a href="#" class="dropdown-toggle" id="homeDropdown">Home <span class="chevron-arrow"></span></a>
+          <div class="dropdown-menu" id="homeDropdownMenu">
+            <a href="home-1.html">Landing Page</a>
+            <a href="home-2.html">Personal</a>
+            <a href="portfolio-3.html">Portfolio Slider</a>
+          </div>
         </div>
+
+
         <a href="about.html" class="nav-item">About Us <span class="chevron-arrow"></span></a>
-        <div class="dropdown">
-            <a href="#" class="dropdown-toggle" id="servicesDropdown"><span>Service</span><span class="chevron-arrow"></span></a>
-            <div class="dropdown-menu" id="servicesDropdownMenu">
-              <a href="services.html">Services List</a>
-              <a href="service.html">Single Service</a>
+
+        
+        <div class="dropdown" id="servicesDropdown">
+          <a href="#" class="dropdown-toggle">Services <span class="chevron-arrow"></span></a>
+          <div class="dropdown-menu mega-menu" id="servicesDropdownMenu">
+            <div class="mega-progress-bar"></div> 
+            <div class="mega-menu-content">
+              <div class="mega-menu-categories">
+                <ul>
+                  <li class="active" data-category="design">Design & Animation</li>
+                  <li data-category="web">Web & App Development</li>
+                  <li data-category="imm">Immersive Technologies</li>
+                  <li data-category="game">Game Development</li>
+                  <li data-category="enter">Enterprise Solutions</li>
+                  <li data-category="digital">Digital Marketing</li>
+                  <li data-category="rebrand">Rebranding & Redeveloping</li>
+
+                </ul>
+              </div>
+              <div class="mega-menu-details">
+                <div class="mega-menu-panel" data-category="design">
+                  <h4>Design & Animation</h4>
+                  <ul>
+                    <li><a href="2d-3d.html">2D & 3D Animation</a></li>
+                    <li><a href="CGI.html">CGI & Video Production</a></li>
+                    <li><a href="graphics.html">Graphics and UI/UX Design</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-panel" data-category="web" >
+                  <h4>Web & App Development</h4>
+                  <ul>
+                    <li><a href="web.html">Web Development</a></li>
+                    <li><a href="mobile.html">Mobile App Development</a></li>
+                    <li><a href="soft.html">Software Development</a></li>
+                    <li><a href="low.html">Low Code No Code Development</a></li>
+                    <li><a href="customERP.html">Custom ERP Software Development Services</a></li>
+                    <li><a href="saas.html">SaaS Development Services</a></li>
+                    <li><a href="shopify.html">Shopify Development</a></li>
+                    <li><a href="wordpress.html">WordPress Development</a></li>
+                    <li><a href="AIdev.html">AI Development</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-panel" data-category="imm">
+                    <h4>Immersive Technologies</h4>
+                    <ul>
+                      <li><a href="AR.html">AR (Augmented Reality)</a></li>
+                      <li><a href="VR.html">VR (Virtual Reality)</a></li>
+                      <li><a href="XR.html">XR (Extended Reality)</a></li>
+                      <li><a href="MR.html">MR (Mixed Reality)</a></li>
+                      <li><a href="metaverseSolution.html">Metaverse Solutions</a></li>
+                      <li><a href="nftGameDevlopment.html">NFT Game Development</a></li>
+                      <li><a href="nftMarketPlace.html">NFT Marketplace Development</a></li>
+                      <li><a href="immersive.html">Immersive Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="mega-menu-panel" data-category="game">
+                    <h4>Game Development</h4>
+                    <ul>
+                      <li><a href="androidGameDevlopment.html">Android Game Development</a></li>
+                      <li><a href="iosGameDevlopment.html">iOS Game Development</a></li>
+                      <li><a href="metaverseGameDevlopment.html">Metaverse Game Development</a></li>                      
+                    </ul>
+                </div>
+                <div class="mega-menu-panel" data-category="enter">
+                    <h4>Enterprise Solutions</h4>
+                    <ul>
+                      <li><a href="crmDevlopment.html">CRM Development</a></li>
+                      <li><a href="erpDevlopment.html">ERP DevelopmentCustom Software</a></li>
+                      <li><a href="devlopment.html">Development</a></li>                      
+                    </ul>
+                </div>
+                <div class="mega-menu-panel" data-category="digital">
+                    <h4>Digital Marketing</h4>
+                    <ul>
+                      <li><a href="seoSearchEngine.html">SEO (Search Engine Optimization)</a></li>
+                      <li><a href="digitalMarketing.html">Digital Marketing Strategy</a></li>
+                      <li><a href="immersiveMarketing.html">Immersive Marketing</a></li>                      
+                    </ul>
+                </div>
+                <div class="mega-menu-panel" data-category="rebrand">
+                    <h4>Rebranding & Redeveloping</h4>
+                    <ul>
+                      <li><a href="redesign.html">Website Redesign</a></li>
+                      <li><a href="brandIdentity.html">Brand Identity Refresh</a></li>
+                      <li><a href="technologyMigration.html">Technology Migration</a></li>                      
+                    </ul>
+                </div>
+                <!-- Add more panels for other categories -->
+              </div>
             </div>
+          </div>
         </div>
-        <a href="about.html" class="nav-item">technologies <span class="chevron-arrow"></span></a>
+
+        <div class="dropdown" id="technologiesDropdown">
+          <a href="#" class="dropdown-toggle">Technologies <span class="chevron-arrow"></span></a>
+          <div class="dropdown-menu mega-menu" id="technologiesDropdownMenu">
+            <div class="mega-progress-bar"></div>
+            <div class="mega-menu-content">
+              <div class="mega-menu-categories tech-categories">
+                <ul>
+                  <li class="active" data-category="design-tech">Design & Animation</li>
+                  <li data-category="web-tech">Web & App Development</li>
+                  <li data-category="imm-tech">Immersive Technologies</li>
+                  <li data-category="game-tech">Game Development</li>
+                  <li data-category="enter-tech">Enterprise Solutions</li>
+                  <li data-category="digital-tech">Digital Marketing</li>
+                  <li data-category="rebrand-tech">Rebranding & Redeveloping</li>
+                </ul>
+              </div>
+              <div class="mega-menu-details tech-details">
+                <div class="mega-menu-panel tech-panel" data-category="design-tech">
+                  <h4>Design & Animation</h4>
+                  <ul>
+                    <li><a href="#">2D & 3D Animation</a></li>
+                    <li><a href="#">CGI & Video Production</a></li>
+                    <li><a href="#">Graphics and UI/UX Design</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-panel tech-panel" data-category="web-tech">
+                  <h4>Web & App Development</h4>
+                  <ul>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Mobile App Development</a></li>
+                    <li><a href="#">Software Development</a></li>
+                    <li><a href="#">Low Code/No Code,</a></li>
+                    <li><a href="#">ERP & SaaS </a></li>
+                    <li><a href="#">Shopify</a></li>
+                    <li><a href="#">WordPress</a></li>
+                    <li><a href="#">AI Development</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-panel tech-panel" data-category="imm-tech">
+                  <h4>Immersive Technologies</h4>
+                  <ul>
+                    <li><a href="#">AR</a></li>
+                    <li><a href="#">VR</a></li>
+                    <li><a href="#">XR</a></li>
+                    <li><a href="#">MR</a></li>
+                    <li><a href="#">Metaverse Solutions</a></li>
+                    <li><a href="#">NFT Game Dev</a></li>
+                    <li><a href="#">NFT Marketplace</a></li>
+                    <li><a href="#">Immersive Marketing</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-panel tech-panel" data-category="game-tech">
+                  <h4>Game Development</h4>
+                  <ul>
+                    <li><a href="#"> Android Game Dev</a></li>
+                    <li><a href="#">IOS Game Dev</a></li>
+                    <li><a href="#">Metaverse Game Dev</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-panel tech-panel" data-category="enter-tech">
+                  <h4>Enterprise Solutions</h4>
+                  <ul>
+                    <li><a href="#">CRM Development</a></li>
+                    <li><a href="#">ERP Development</a></li>
+                    <li><a href="#">Custom Software Development</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-panel tech-panel" data-category="digital-tech">
+                  <h4>Digital Marketing</h4>
+                  <ul>
+                    <li><a href="#">SEO</a></li>
+                    <li><a href="#">Digital Strategy</a></li>
+                    <li><a href="#">Immersive Marketing</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-panel tech-panel" data-category="rebrand-tech">
+                  <h4>Rebranding & Redeveloping</h4>
+                  <ul>
+                    <li><a href="#">Website Redesign</a></li>
+                    <li><a href="#">Brand Identity Refresh</a></li>
+                    <li><a href="#">Technology Migration</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="dropdown">
           <a href="#" class="dropdown-toggle" id="portfolioDropdown"><span>Portfolio</span><span class="chevron-arrow"></span></a>
           <div class="dropdown-menu" id="portfolioDropdownMenu">
@@ -44,6 +228,7 @@
             <a href="portfolio-3.html">Slider</a>
           </div>
         </div>
+        
         <div class="dropdown">
           <a href="#" class="dropdown-toggle" id="newsletterDropdown"><span>Blog</span><span class="chevron-arrow"></span></a>
           <div class="dropdown-menu" id="newsletterDropdownMenu">
@@ -54,15 +239,25 @@
         <div class="dropdown">
           <a href="#" class="dropdown-toggle" id="pagesDropdown"><span>Company</span><span class="chevron-arrow"></span></a>
           <div class="dropdown-menu" id="pagesDropdownMenu">
+            <a href="contact.html">Contact Us</a>
+            <a href="#">Careers</a>
+            <a href="#">Privacy Policy</a>
             <a href="team.html">Team</a>
-            <a href="contact.html">Contact</a>
             <a href="404.html">404</a>
           </div>
         </div>
+        <a href="#enquiry" class="quick-enquiry-btn">
+            <span class="qe-text">QUICK ENQUIRY</span>
+            <span class="qe-circle">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <path d="M18 24H34M34 24L29 19M34 24L29 29" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+        </a>
       </nav>
     </div>
+    </nav>
     <!-- Responsive Header Bar End -->
-
     <div class="mil-wrapper" id="top">
         <!-- preloader, cursor, progress, menu, curtain, frame, etc. (same as home-1.html) -->
         <!-- content -->
