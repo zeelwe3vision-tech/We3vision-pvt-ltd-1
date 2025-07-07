@@ -5385,4 +5385,125 @@ html.is-animating .mil-menu-frame {
     font-size: 1rem;
   }
 }
+/*responsive ourservices*/
+@media (max-width: 900px) {
+  .ar-timeline-v2-row {
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    gap: 12px;
+    text-align: left;
+    position: static !important;
+    background: none !important;
+    box-shadow: none !important;
+    margin-bottom: 24px;
+  }
+  .ar-timeline-v2-marker,
+  .ar-timeline-v2-checklist {
+    display: none !important;
+  }
+  .ar-timeline-v2-content {
+    flex: 1 1 0;
+    max-width: 100%;
+    margin: 0 !important;
+    box-shadow: none !important;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .ar-step-num-v2 {
+    min-width: 40px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #e65cff;
+    display: inline-block;
+    margin-right: 8px;
+  }
+  .ar-step-main,
+  .ar-step-desc-v2 {
+    display: block;
+  }
+  .ar-step-title-v2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 0;
+  }
+  .ar-timeline-v2 {
+    max-width: 100%;
+}
+.ar-timeline-v2-row {
+    flex-direction: column;
+    margin-bottom: 32px;
+    align-items: stretch;
+}
+.ar-timeline-v2-row.left .ar-timeline-v2-content,
+.ar-timeline-v2-row.left .ar-timeline-v2-checklist,
+.ar-timeline-v2-row.right .ar-timeline-v2-content,
+.ar-timeline-v2-row.right .ar-timeline-v2-checklist {
+    flex: 1 1 100%;
+    text-align: left !important;
+}
+.ar-timeline-v2-marker {
+    margin: 18px 0;
+}
+}
 
+@media (max-width: 900px) {
+  /* Hide vertical timeline line if present as a pseudo-element or background */
+  .ar-timeline-v2::before,
+  .ar-timeline-v2::after {
+    display: none !important;
+  }
+  .ar-timeline-v2 {
+    background: none !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .ar-timeline-v2-row {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    margin-bottom: 20px;
+    background: none !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+  .ar-timeline-v2-marker,
+  .ar-timeline-v2-checklist {
+    display: none !important;
+  }
+  .ar-timeline-v2-content {
+    display: table-row;
+    width: 100%;
+  }
+  .ar-step-title-v2 {
+    display: table-cell;
+    width: 38%;
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding-right: 10px;
+    padding-bottom: 6px;
+    white-space: normal;
+  }
+  .ar-step-desc-v2 {
+    display: table-cell;
+    width: 62%;
+    vertical-align: top;
+    font-size: 1em;
+    padding-left: 10px;
+    padding-bottom: 6px;
+    white-space: normal;
+  }
+  .ar-timeline-v2::before,
+  .ar-timeline-v2::after {
+    display: none !important;
+  }
+}
+
+.mil-banner-content.mil-up {
+  margin-bottom: 100px; /* adjust as needed */
+}
