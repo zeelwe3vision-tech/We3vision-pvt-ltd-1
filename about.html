@@ -600,5 +600,97 @@
     <script src="js/plugins/ScrollTrigger.min.js"></script>
     <script src="js/plugins/ScrollTo.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+    document.querySelectorAll('.header-bar .dropdown > .dropdown-toggle').forEach(function(toggle) {
+      toggle.addEventListener('click', function(e) {
+        // Only run on mobile
+        if (window.innerWidth <= 900) {
+          e.preventDefault();
+          // Close other open mega menus
+          document.querySelectorAll('.header-bar .dropdown').forEach(function(drop) {
+            if (drop !== toggle.parentElement) drop.classList.remove('open');
+          });
+          // Toggle current
+          toggle.parentElement.classList.toggle('open');
+        }
+      });
+    });
+
+    // Optional: Close mega menu when clicking outside (mobile)
+    document.addEventListener('click', function(e) {
+      if (window.innerWidth <= 900 && !e.target.closest('.header-bar .dropdown')) {
+        document.querySelectorAll('.header-bar .dropdown').forEach(function(drop) {
+          drop.classList.remove('open');
+        });
+      }
+    });
+    </script>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const technologiesDropdown = document.getElementById('technologiesDropdown');
+      const technologiesDropdownMenu = document.getElementById('technologiesDropdownMenu');
+      technologiesDropdown.addEventListener('click', function(e) {
+        e.preventDefault();
+        technologiesDropdownMenu.classList.toggle('show');
+      });
+
+      // Optional: Close dropdown when clicking outside
+      document.addEventListener('click', function(e) {
+        if (!technologiesDropdown.contains(e.target) && !technologiesDropdownMenu.contains(e.target)) {
+          technologiesDropdownMenu.classList.remove('show');
+        }
+      });
+    });
+    </script>
+
+    <script>
+    // TECHNOLOGIES MEGA MENU SCRIPT
+    document.addEventListener('DOMContentLoaded', function() {
+      const techCategoryItems = document.querySelectorAll('.tech-categories li');
+      const techPanels = document.querySelectorAll('.tech-panel');
+
+      techCategoryItems.forEach(item => {
+        item.addEventListener('click', function() {
+          techCategoryItems.forEach(i => i.classList.remove('active'));
+          techPanels.forEach(p => p.classList.remove('active'));
+          this.classList.add('active');
+          const cat = this.getAttribute('data-category');
+          document.querySelector('.tech-panel[data-category="' + cat + '"]').classList.add('active');
+        });
+      });
+
+      // Show first panel by default
+      if (techCategoryItems.length && techPanels.length) {
+        techCategoryItems[0].classList.add('active');
+        techPanels[0].classList.add('active');
+      }
+    });
+    </script>
+
+    <script>
+    // SERVICES MEGA MENU SCRIPT
+    document.addEventListener('DOMContentLoaded', function() {
+      const serviceCategoryItems = document.querySelectorAll('.mega-menu-categories:not(.tech-categories) li');
+      const servicePanels = document.querySelectorAll('.mega-menu-details:not(.tech-details) .mega-menu-panel');
+
+      serviceCategoryItems.forEach(item => {
+        item.addEventListener('click', function() {
+          serviceCategoryItems.forEach(i => i.classList.remove('active'));
+          servicePanels.forEach(p => p.classList.remove('active'));
+          this.classList.add('active');
+          const cat = this.getAttribute('data-category');
+          document.querySelector('.mega-menu-details:not(.tech-details) .mega-menu-panel[data-category="' + cat + '"]').classList.add('active');
+        });
+      });
+
+      // Show first panel by default
+      if (serviceCategoryItems.length && servicePanels.length) {
+        serviceCategoryItems[0].classList.add('active');
+        servicePanels[0].classList.add('active');
+      }
+    });
+    </script>
 </body>
 </html>
