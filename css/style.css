@@ -5500,3 +5500,31 @@ html.is-animating .mil-menu-frame {
 .mil-banner-content.mil-up {
   margin-bottom: 100px; /* adjust as needed */
 }
+.mil-banner-content.mil-up {
+  margin-bottom: 100px; /* adjust as needed */
+}
+/* Set background color for the industries/reviews section */
+.container.mil-p-120-120,.mil-p-120-90{
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw); 
+  background: linear-gradient(135deg, #A80C4C, #090939, #421256, #531C9B);
+  color: rgba(255, 255, 255, 0.9);;
+}
+
+/* Set background color for the partners section */
+.container.mil-p-0-120 {
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw); 
+  background: linear-gradient(135deg, #f5f7fa 0%, #f7e1f5 40%, #e0f7fa 100%);
+}
+
+h2.mil-center.mil-up.mil-mb-60 {
+  color: rgba(255, 255, 255, 0.9);;
+}
+
+h5.mil-up.mil-mb-10{
+  color: rgba(255, 255, 255, 0.9);;
+
+}
