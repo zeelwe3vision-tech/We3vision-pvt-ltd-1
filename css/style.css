@@ -5044,7 +5044,6 @@ html.is-animating .mil-menu-frame {
 }
 .ar-timeline-v2-row.left .ar-timeline-v2-content {
     order: 1;
-    text-align: right;
     flex: 0 0 40%;
 }
 .ar-timeline-v2-row.left .ar-timeline-v2-marker {
@@ -5057,14 +5056,12 @@ html.is-animating .mil-menu-frame {
 .ar-timeline-v2-row.right .ar-timeline-v2-checklist {
     order: 1;
     flex: 0 0 40%;
-    text-align: right;
 }
 .ar-timeline-v2-row.right .ar-timeline-v2-marker {
     order: 2;
 }
 .ar-timeline-v2-row.right .ar-timeline-v2-content {
     order: 3;
-    text-align: left;
     flex: 0 0 40%;
 }
 .ar-timeline-v2-marker {
