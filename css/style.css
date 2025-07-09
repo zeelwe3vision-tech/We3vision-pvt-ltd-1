@@ -4216,7 +4216,6 @@ html.is-animating .mil-menu-frame {
   opacity: 0;
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
-<<<<<<< Updated upstream
 }
 
 /* Modern Header Bar Styles */
@@ -5010,8 +5009,6 @@ html.is-animating .mil-menu-frame {
     margin-bottom: 0;
   }
 }
-=======
->>>>>>> Stashed changes
 /*our services*/
 .ar-timeline-v2 {
     position: relative;
