@@ -5528,3 +5528,23 @@ h5.mil-up.mil-mb-10{
   color: rgba(255, 255, 255, 0.9);;
 
 }
+
+/* Why Choose Us section styles */
+.why-choose-us-title {
+  color: #2A2BC7;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.why-choose-us-section {
+  background: linear-gradient(135deg, #f5f7fa 0%, #f7e1f5 40%, #e0f7fa 100%);
+  padding: 60px 0;
+}
+
+.mil-muted.mil-mb-20,.mil-light-soft{
+  color: #2A2BC7;
+}
+
