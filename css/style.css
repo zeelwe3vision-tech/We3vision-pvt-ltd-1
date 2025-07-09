@@ -2399,10 +2399,7 @@ services
   border-top: solid 1px rgba(255, 255, 255, 0.1);
 }
 .mil-services-grid .mil-services-grid-item {
-  border-right: solid 1px rgba(255, 255, 255, 0.1);
-}
-.mil-services-grid .mil-services-grid-item:first-child {
-  border-left: solid 1px rgba(255, 255, 255, 0.1);
+  border: solid 1px rgba(255, 255, 255, 0.1);
 }
 @media screen and (max-width: 992px) {
   .mil-services-grid {
