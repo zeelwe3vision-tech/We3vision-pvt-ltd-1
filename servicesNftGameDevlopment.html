@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- bootstrap grid css -->
+    <link rel="stylesheet" href="css/plugins/bootstrap-grid.css">
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="css/plugins/font-awesome.min.css">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="css/plugins/swiper.min.css">
+    <!-- fancybox css -->
+    <link rel="stylesheet" href="css/plugins/fancybox.min.css">
+    <!-- We3vision Infotech scss -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>NFT Game Development | We3vision Pvt Ltd</title>
+</head>
+<body>
+  <div class="header-bar">
+    <div class="logo">A.</div>
+    <button class="menu-toggle" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav>
+      <div class="dropdown">
+        <a href="index.html" class="dropdown-toggle" id="homeDropdown">Home</a>
+      </div>
+
+
+      <a href="about.html" class="nav-item">About Us</a>
+
+      
+      <div class="dropdown" id="servicesDropdown">
+        <a href="#" class="dropdown-toggle">Services <span class="chevron-arrow"></span></a>
+        <div class="dropdown-menu mega-menu" id="servicesDropdownMenu">
+          <div class="mega-progress-bar"></div> 
+          <div class="mega-menu-content">
+            <div class="mega-menu-categories">
+              <ul>
+                <li class="active" data-category="design">Design & Animation</li>
+                <li data-category="web">Web & App Development</li>
+                <li data-category="imm">Immersive Technologies</li>
+                <li data-category="game">Game Development</li>
+                <li data-category="enter">Enterprise Solutions</li>
+                <li data-category="digital">Digital Marketing</li>
+                <li data-category="rebrand">Rebranding & Redeveloping</li>
+
+              </ul>
+            </div>
+            <div class="mega-menu-details">
+              <div class="mega-menu-panel" data-category="design">
+                <h4>Design & Animation</h4>
+                <ul>
+                   <li><a href="sevices2d-3d.html">2D & 3D Animation</a></li>
+                  <li><a href="sevicesCGI.html">CGI & Video Production</a></li>
+                  <li><a href="servicesGraphics.html">Graphics and UI/UX Design</a></li>
+                </ul>
+              </div>
+              <div class="mega-menu-panel" data-category="web" >
+                <h4>Web & App Development</h4>
+                <ul>
+                  <li><a href="servicesWeb.html">Web Development</a></li>
+                  <li><a href="servicesMobile.html">Mobile App Development</a></li>
+                  <li><a href="servicesSoft.html">Software Development</a></li>
+                  <li><a href="servicesLow.html">Low Code No Code Development</a></li>
+                  <li><a href="servicesErpDevlopment.html">Custom ERP Software Development Services</a></li>
+                  <li><a href="servicesSaas.html">SaaS Development Services</a></li>
+                  <li><a href="servicesShopify.html">Shopify Development</a></li>
+                  <li><a href="servicesWordpress.html">WordPress Development</a></li>
+                  <li><a href="servicesAIdev.html">AI Development</a></li>
+                </ul>
+              </div>
+              <div class="mega-menu-panel" data-category="imm">
+                <h4>Immersive Technologies</h4>
+                <ul>
+                  <li><a href="servicesAR.html">AR (Augmented Reality)</a></li>
+                  <li><a href="servicesVR.html">VR (Virtual Reality)</a></li>
+                  <li><a href="servicesXR.htmlXR.html">XR (Extended Reality)</a></li>
+                  <li><a href="servicesMR.htmlMR.html">MR (Mixed Reality)</a></li>
+                  <li><a href="servicesMetaverseSolution.html">Metaverse Solutions</a></li>
+                  <li><a href="servicesNftGameDevlopment.html">NFT Game Development</a></li>
+                  <li><a href="servicesNftMarketPlace.html">NFT Marketplace Development</a></li>
+                  <li><a href="servicesImmersive.html">Immersive Marketing</a></li>
+                </ul>
+            </div>
+              <div class="mega-menu-panel" data-category="game">
+                  <h4>Game Development</h4>
+                  <ul>
+                    <li><a href="servicesAndroidGameDevlopment.html">Android Game Development</a></li>
+                    <li><a href="servicesIosGameDevlopment.html">iOS Game Development</a></li>
+                    <li><a href="servicesMetaverseGameDevlopment.html">Metaverse Game Development</a></li>                      
+                  </ul>
+              </div>
+              <div class="mega-menu-panel" data-category="enter">
+                  <h4>Enterprise Solutions</h4>
+                  <ul>
+                    <li><a href="servicesCrmDevlopment.html">CRM Development</a></li>
+                    <li><a href="servicesErpDevlopment.html">ERP DevelopmentCustom Software</a></li>
+                    <li><a href="sevicesDevlopment.html">Development</a></li>                      
+                  </ul>
+              </div>
+              <div class="mega-menu-panel" data-category="digital">
+                  <h4>Digital Marketing</h4>
+                  <ul>
+                    <li><a href="servicesSeoSearchEngine.html">SEO (Search Engine Optimization)</a></li>
+                    <li><a href="sevicesDigitalMarketing.html">Digital Marketing Strategy</a></li>
+                    <li><a href="servicesImmersiveMarketing.html">Immersive Marketing</a></li>                      
+                  </ul>
+              </div>
+              <div class="mega-menu-panel" data-category="rebrand">
+                  <h4>Rebranding & Redeveloping</h4>
+                  <ul>
+                    <li><a href="servicesRedesign.html">Website Redesign</a></li>
+                    <li><a href="servicesBrandIdentity.html">Brand Identity Refresh</a></li>
+                    <li><a href="servicesTechnologyMigration.html">Technology Migration</a></li>                      
+                  </ul>
+              </div>
+              <!-- Add more panels for other categories -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown" id="technologiesDropdown">
+        <a href="#" class="dropdown-toggle">Technologies <span class="chevron-arrow"></span></a>
+        <div class="dropdown-menu mega-menu" id="technologiesDropdownMenu">
+          <div class="mega-progress-bar"></div>
+          <div class="mega-menu-content">
+            <div class="mega-menu-categories tech-categories">
+              <ul>
+                <li class="active" data-category="design-tech"><a href="technoDesign.html">Design & Animation</a></li>
+                <li data-category="web-tech"><a href="technoWeb.html">Web & App Development</a></li>
+                <li data-category="imm-tech"><a href="technoImmersive.html">Immersive Technologies</a></li>
+                <li data-category="game-tech"><a href="technoGame.html">Game Development</a></li>
+                <li data-category="enter-tech"><a href="technoEnterprise.html">Enterprise Solutions</a></li>
+                <li data-category="digital-tech"><a href="technoDigital.html">Digital Marketing</a></li>
+                <li data-category="rebrand-tech"><a href="technoRebranding.html">Rebranding & Redeveloping</a></li>
+              </ul>
+            </div>
+            <div class="mega-menu-details tech-details">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="#" class="dropdown-toggle" id="portfolioDropdown"><span>Portfolio</span><span class="chevron-arrow"></span></a>
+        <div class="dropdown-menu" id="portfolioDropdownMenu">
+          <a href="portfolio-1.html">Grid type 1</a>
+          <a href="portfolio-2.html">Grid type 2</a>
+          <a href="portfolio-3.html">Slider</a>
+        </div>
+      </div>
+      
+      <div class="dropdown">
+        <a href="#" class="dropdown-toggle" id="newsletterDropdown"><span>Blog</span><span class="chevron-arrow"></span></a>
+        <div class="dropdown-menu" id="newsletterDropdownMenu">
+          <a href="blog.html">Blog List</a>
+          <a href="publication.html">Publication</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#" class="dropdown-toggle" id="pagesDropdown"><span>Company</span><span class="chevron-arrow"></span></a>
+        <div class="dropdown-menu" id="pagesDropdownMenu">
+          <a href="contact.html">Contact Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Privacy Policy</a>
+          <a href="team.html">Team</a>
+          <a href="404.html">404</a>
+        </div>
+      </div>
+      <a href="#enquiry" class="quick-enquiry-btn">
+          <span class="qe-text">QUICK ENQUIRY</span>
+          <span class="qe-circle">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <path d="M18 24H34M34 24L29 19M34 24L29 29" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+      </a>
+    </nav>
+  </div>
+  </nav>
+  <!-- Responsive Header Bar End -->
+    <!-- wrapper -->
+    <div class="mil-wrapper" id="top">
+        <!-- cursor -->
+        <div class="mil-ball">
+            <span class="mil-icon-1">
+                <svg viewBox="0 0 128 128">
+                    <path d="M106.1,41.9c-1.2-1.2-3.1-1.2-4.2,0c-1.2,1.2-1.2,3.1,0,4.2L116.8,61H11.2l14.9-14.9c1.2-1.2,1.2-3.1,0-4.2 c-1.2-1.2-3.1-1.2-4.2,0l-20,20c-1.2,1.2-1.2,3.1,0,4.2l20,20c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9c1.2-1.2,1.2-3.1,0-4.2 L11.2,67h105.5l-14.9,14.9c-1.2,1.2-1.2,3.1,0,4.2c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9l20-20c1.2-1.2,1.2-3.1,0-4.2L106.1,41.9 z" />
+                </svg>
+            </span>
+            <div class="mil-more-text">More</div>
+            <div class="mil-choose-text">Сhoose</div>
+        </div>
+        <!-- preloader -->
+        <div class="mil-preloader">
+            <div class="mil-preloader-animation">
+                <div class="mil-pos-abs mil-animation-1">
+                    <p class="mil-h3 mil-muted mil-thin">Pioneering</p>
+                    <p class="mil-h3 mil-muted">Creative</p>
+                    <p class="mil-h3 mil-muted mil-thin">Excellence</p>
+                </div>
+                <div class="mil-pos-abs mil-animation-2">
+                    <div class="mil-reveal-frame">
+                        <p class="mil-reveal-box"></p>
+                        <p class="mil-h3 mil-muted mil-thin">We3vision Private Limited</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- scrollbar progress -->
+        <div class="mil-progress-track">
+            <div class="mil-progress"></div>
+        </div>
+        <!-- menu -->
+        <div class="mil-menu-frame">
+            <div class="mil-frame-top">
+                <a href="home-1.html" class="mil-logo">A.</a>
+                <div class="mil-menu-btn">
+                    <span></span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="mil-menu-content">
+                    <div class="row">
+                        <div class="col-xl-5">
+                            <nav class="mil-main-menu" id="swupMenu">
+                                <ul>
+                                    <li class="mil-has-children">
+                                        <a href="#.">Homepage</a>
+                                        <ul>
+                                            <li><a href="home-1.html">Landing page</a></li>
+                                            <li><a href="home-2.html">Personal</a></li>
+                                            <li><a href="portfolio-3.html">Portfolio slider</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="mil-has-children">
+                                        <a href="#.">Portfolio</a>
+                                        <ul>
+                                            <li><a href="portfolio-1.html">Grid type 1</a></li>
+                                            <li><a href="portfolio-2.html">Grid type 2</a></li>
+                                            <li><a href="portfolio-3.html">Slider</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="mil-has-children mil-active">
+                                        <a href="#.">Services</a>
+                                        <ul>
+                                            <li><a href="services.html">Services List</a></li>
+                                            <li><a href="service.html">Single service</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="mil-has-children">
+                                        <a href="#.">Newsletter</a>
+                                        <ul>
+                                            <li><a href="blog.html">Blog List</a></li>
+                                            <li><a href="publication.html">Publication</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="mil-has-children">
+                                        <a href="#.">Other pages</a>
+                                        <ul>
+                                            <li><a href="team.html">Team</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="404.html">404</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-xl-7">
+                            <div class="mil-menu-right-frame">
+                                <div class="mil-animation-in">
+                                    <div class="mil-animation-frame">
+                                        <div class="mil-animation mil-position-1 mil-scale" data-value-1="2" data-value-2="2"></div>
+                                    </div>
+                                </div>
+                                <div class="mil-menu-right">
+                                    <!-- Add any additional menu content here if needed -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- curtain -->
+        <div class="mil-curtain"></div>
+        <!-- content -->
+        <div class="mil-content">
+            <div id="swupMain" class="mil-main-transition">
+                <!-- Hero Section + Overview -->
+                <div class="mil-inner-banner">
+                    <div class="mil-animation-frame">
+                        <div class="mil-animation mil-position-4 mil-dark mil-scale" data-value-1="6" data-value-2="1.4"></div>
+                    </div>
+                    <div class="mil-banner-content mil-up">
+                        <div class="container">
+                            <h1 class="mil-mb-60">Build Play-to-Earn Games with Real Digital Ownership</h1>
+                            <p class="mil-text-xl mil-mb-30">We help game studios, Web3 startups, and creators develop NFT-based games where players truly own in-game assets. From strategy games and RPGs to card battlers and metaverse experiences, our NFT game development services cover everything—from smart contracts to tokenomics to immersive gameplay.<br><br>Whether you're building a blockchain-based game from scratch or upgrading an existing one with NFT functionality, we'll help you create a secure, engaging, and monetizable gaming ecosystem.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Our Process (Timeline) -->
+                <section id="process" class="mil-dark-bg">
+                    <div class="mi-invert-fix">
+                        <div class="container mil-p-120-90">
+                            <h2 class="mil-up mil-mb-60" style="color: white; text-align:center;">Our <span style="color:#e65cff;">Process</span></h2>
+                            <div class="ar-timeline-v2">
+                                <!-- Step 1 -->
+                                <div class="ar-timeline-v2-row left">
+                                    <div class="ar-timeline-v2-content">
+                                        <div class="ar-step-title-v2"><span class="ar-step-num-v2" style="color:#e65cff;">01.</span> <span class="ar-step-main">Game Concept & Token Economy Planning</span></div>
+                                        <div class="ar-step-desc-v2">We align on your game's core loop, asset types, play-to-earn model, and NFT structure.</div>
+                                    </div>
+                                    <div class="ar-timeline-v2-marker">
+                                        <div class="ar-marker-circle" style="background:linear-gradient(135deg,#e65cff,#ff5c8a);"><i class="fa fa-pencil-square-0"></i></div>
+                                    </div>
+                                    <div class="ar-timeline-v2-checklist">
+                                        <ul>
+                                            <li>We align on your game's core loop, asset types, play-to-earn model, and NFT structure.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Step 2 -->
+                                <div class="ar-timeline-v2-row right">
+                                    <div class="ar-timeline-v2-checklist">
+                                        <ul>
+                                            <li>We design characters, environments, gameplay mechanics, and reward systems.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="ar-timeline-v2-marker">
+                                        <div class="ar-marker-circle" style="background:linear-gradient(135deg,#ff5c8a,#5c9cff);"><i class="fa fa-pencil-square-0"></i></div>
+                                    </div>
+                                    <div class="ar-timeline-v2-content">
+                                        <div class="ar-step-title-v2"><span class="ar-step-num-v2" style="color:#ff5c8a;">02.</span> <span class="ar-step-main">Game Design & Storyboarding</span></div>
+                                        <div class="ar-step-desc-v2">We design characters, environments, gameplay mechanics, and reward systems.</div>
+                                    </div>
+                                </div>
+                                <!-- Step 3 -->
+                                <div class="ar-timeline-v2-row left">
+                                    <div class="ar-timeline-v2-content">
+                                        <div class="ar-step-title-v2"><span class="ar-step-num-v2" style="color:#5c9cff;">03.</span> <span class="ar-step-main">Blockchain & Smart Contract Setup</span></div>
+                                        <div class="ar-step-desc-v2">We develop custom smart contracts to mint, trade, and manage NFTs on chains like Ethereum, BSC, or Polygon.</div>
+                                    </div>
+                                    <div class="ar-timeline-v2-marker">
+                                        <div class="ar-marker-circle" style="background:linear-gradient(135deg,#5c9cff,#5cffb0);"><i class="fa fa-pencil-square-0"></i></div>
+                                    </div>
+                                    <div class="ar-timeline-v2-checklist">
+                                        <ul>
+                                            <li>We develop custom smart contracts to mint, trade, and manage NFTs on chains like Ethereum, BSC, or Polygon.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Step 4 -->
+                                <div class="ar-timeline-v2-row right">
+                                    <div class="ar-timeline-v2-checklist">
+                                        <ul>
+                                            <li>Our devs build your game using engines like Unity or Unreal, then integrate blockchain layers, wallets, and marketplaces.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="ar-timeline-v2-marker">
+                                        <div class="ar-marker-circle" style="background:linear-gradient(135deg,#5cffb0,#ffd15c);"><i class="fa fa-pencil-square-0"></i></div>
+                                    </div>
+                                    <div class="ar-timeline-v2-content">
+                                        <div class="ar-step-title-v2"><span class="ar-step-num-v2" style="color:#5cffb0;">04.</span> <span class="ar-step-main">Game Development & Integration</span></div>
+                                        <div class="ar-step-desc-v2">Our devs build your game using engines like Unity or Unreal, then integrate blockchain layers, wallets, and marketplaces.</div>
+                                    </div>
+                                </div>
+                                <!-- Step 5 -->
+                                <div class="ar-timeline-v2-row left">
+                                    <div class="ar-timeline-v2-content">
+                                        <div class="ar-step-title-v2"><span class="ar-step-num-v2" style="color:#ffd15c;">05.</span> <span class="ar-step-main">Testing & Auditing</span></div>
+                                        <div class="ar-step-desc-v2">We test gameplay performance, NFT mechanics, and smart contracts for fairness and security.</div>
+                                    </div>
+                                    <div class="ar-timeline-v2-marker">
+                                        <div class="ar-marker-circle" style="background:linear-gradient(135deg,#ffd15c,#5cffe6);"><i class="fa fa-pencil-square-0"></i></div>
+                                    </div>
+                                    <div class="ar-timeline-v2-checklist">
+                                        <ul>
+                                            <li>We test gameplay performance, NFT mechanics, and smart contracts for fairness and security.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Step 6 -->
+                                <div class="ar-timeline-v2-row right">
+                                    <div class="ar-timeline-v2-checklist">
+                                        <ul>
+                                            <li>We deploy your game, set up onboarding flows, and help with marketing and community tools (Discord, staking, etc.).</li>
+                                        </ul>
+                                    </div>
+                                    <div class="ar-timeline-v2-marker">
+                                        <div class="ar-marker-circle" style="background:linear-gradient(135deg,#5cffe6,#e65cff);"><i class="fa fa-pencil-square-0"></i></div>
+                                    </div>
+                                    <div class="ar-timeline-v2-content">
+                                        <div class="ar-step-title-v2"><span class="ar-step-num-v2" style="color:#5cffe6;">06.</span> <span class="ar-step-main">Launch & Player Onboarding</span></div>
+                                        <div class="ar-step-desc-v2">We deploy your game, set up onboarding flows, and help with marketing and community tools (Discord, staking, etc.).</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Tech Stack & Tools -->
+                <section class="tech-section mil-p-120-90">
+                    <div class="container">
+                        <h2 class="ar-tech-title"><span style="color:#000000; font-weight:700;">Tech Stack &</span> <span style="color:#e65cff; font-weight:700;">Tools</span></h2>
+                      <div class="tech-card-grid">
+                        <div class="tech-card mil-fade-in-up" style="animation-delay: 0.1s;"><div>Unity / Unreal Engine</div></div>
+                        <div class="tech-card mil-fade-in-up" style="animation-delay: 0.2s;"><div>Ethereum, Polygon, BNB Chain</div></div>
+                        <div class="tech-card mil-fade-in-up" style="animation-delay: 0.3s;"><div>Web3.js / Ethers.js / Moralis</div></div>
+                        <div class="tech-card mil-fade-in-up" style="animation-delay: 0.4s;"><div>IPFS / Pinata for asset storage</div></div>
+                        <div class="tech-card mil-fade-in-up" style="animation-delay: 0.5s;"><div>MetaMask, WalletConnect, Coinbase Wallet</div></div>
+                        <div class="tech-card mil-fade-in-up" style="animation-delay: 0.6s;"><div>ERC-721 / ERC-1155 Smart Contracts</div></div>
+                        <div class="tech-card mil-fade-in-up" style="animation-delay: 0.7s;"><div>OpenSea & Custom NFT Marketplace Integration</div></div>
+                      </div>
+                    </div>
+                 </section>
+                <!-- Game Types We Build -->
+                <section class="industries-section mil-p-120-90">
+          <div class="container">
+            <h2 class="tech-heading">Game Types We Build</h2>
+            <div class="industries-card-grid">
+              <div class="industries-card mil-fade-in-up" style="animation-delay: 0.1s;">
+                <div class="industries-title">Play-to-Earn Games</div>
+                <div class="industries-desc">Reward players with real crypto tokens and tradable NFTs for in-game achievements.</div>
+              </div>
+              <div class="industries-card mil-fade-in-up" style="animation-delay: 0.2s;">
+                <div class="industries-title">Metaverse Games</div>
+                <div class="industries-desc">Virtual 3D worlds where players can explore, build, and own assets or land.</div>
+              </div>
+              <div class="industries-card mil-fade-in-up" style="animation-delay: 0.3s;">
+                <div class="industries-title">Strategy & Card Games</div>
+                <div class="industries-desc">Deck-building and battle-based games powered by NFT characters and items.</div>
+              </div>
+              <div class="industries-card mil-fade-in-up" style="animation-delay: 0.4s;">
+                <div class="industries-title">Fantasy Sports & eSports Games</div>
+                <div class="industries-desc">NFT-based fantasy leagues, teams, and digital collectibles.</div>
+              </div>
+              <div class="industries-card mil-fade-in-up" style="animation-delay: 0.5s;">
+                <div class="industries-title">Idle & Simulation Games</div>
+                <div class="industries-desc">Auto-farming or tycoon-style games with real asset ownership.</div>
+              </div>
+            </div>
+          </div>
+       </section>
+                <!-- Why Choose Us -->
+                <section id="why-choose-us">
+                    <div class="container mil-p-120-90">
+                        <h2 class="mil-up mil-mb-60">Why <span class="mil-thin">Choose Us?</span></h2>
+                        <div class="row">
+                            <div class="col-md-4 mil-mb-30">
+                                <h4 class="mil-up">Full-Suite NFT Game Development</h4>
+                                <p>From concept and art to blockchain and gameplay—we cover the entire ecosystem under one roof.</p>
+                            </div>
+                            <div class="col-md-4 mil-mb-30">
+                                <h4 class="mil-up">Experienced in Web3, Not Just Gaming</h4>
+                                <p>Our team understands wallet UX, DeFi mechanics, tokenomics, and the fast-evolving crypto space.</p>
+                            </div>
+                            <div class="col-md-4 mil-mb-30">
+                                <h4 class="mil-up">Secure, Audited Smart Contracts</h4>
+                                <p>We write and test all contracts rigorously to protect your players and project from exploits.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 mil-mb-30">
+                                <h4 class="mil-up">Cross-Platform Gaming Experiences</h4>
+                                <p>We build for web, desktop, and mobile platforms with Web3 integrations that work across devices.</p>
+                            </div>
+                            <div class="col-md-4 mil-mb-30">
+                                <h4 class="mil-up">Community-Driven Game Mechanics</h4>
+                                <p>We help you integrate DAO features, reward pools, and staking to engage your players and investors.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Quick Quote / Contact Us -->
+                <section id="contact-quote" class="mil-dark-bg">
+                    <div class="mi-invert-fix">
+                        <div class="container mil-p-120-90">
+                            <div class="mil-center mil-mb-60">
+                                <h2 class="mil-up mil-mb-20" style="color: white;">Let's Build the Next Big NFT Game</h2>
+                                <p class="mil-text-lg" style="color: white;">Whether you have a prototype or just an idea—we'll help you turn it into a playable, scalable NFT game that makes noise in the Web3 world.</p>
+                            </div>
+                            <div class="mil-center">
+                                <a href="contact.html" class="mil-button mil-arrow-place mil-mb-20 mil-mr-30"><span>Request a Free Game Dev Quote</span></a>
+                                <a href="contact.html" class="mil-button mil-arrow-place mil-mb-20 mil-mr-30"><span>Talk to Our Blockchain Game Experts</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- FAQ -->
+                <section id="faq">
+                    <div class="container mil-p-120-90">
+                        <h2 class="mil-up mil-mb-60">Frequently Asked <span class="mil-thin">Questions</span></h2>
+                        <div class="mil-accordion-group mil-up">
+                            <div class="mil-accordion-menu">
+                                <p class="mil-accordion-head">What blockchains do you support for NFT games?</p>
+                                <div class="mil-symbol mil-h3"><div class="mil-plus">+</div><div class="mil-minus">-</div></div>
+                            </div>
+                            <div class="mil-accordion-content">
+                                <p>We build on Ethereum, Polygon, BNB Chain, Avalanche, and Solana—based on your goals and budget.</p>
+                            </div>
+                        </div>
+                        <div class="mil-accordion-group mil-up">
+                            <div class="mil-accordion-menu">
+                                <p class="mil-accordion-head">Can you help design the token economy?</p>
+                                <div class="mil-symbol mil-h3"><div class="mil-plus">+</div><div class="mil-minus">-</div></div>
+                            </div>
+                            <div class="mil-accordion-content">
+                                <p>Yes, we assist with full tokenomics planning including rewards, staking, burn mechanics, and liquidity models.</p>
+                            </div>
+                        </div>
+                        <div class="mil-accordion-group mil-up">
+                            <div class="mil-accordion-menu">
+                                <p class="mil-accordion-head">Will the game be mobile-friendly?</p>
+                                <div class="mil-symbol mil-h3"><div class="mil-plus">+</div><div class="mil-minus">-</div></div>
+                            </div>
+                            <div class="mil-accordion-content">
+                                <p>Definitely. We can develop mobile-native games or responsive browser-based games with wallet support.</p>
+                            </div>
+                        </div>
+                        <div class="mil-accordion-group mil-up">
+                            <div class="mil-accordion-menu">
+                                <p class="mil-accordion-head">Do you help with launching on marketplaces like OpenSea?</p>
+                                <div class="mil-symbol mil-h3"><div class="mil-plus">+</div><div class="mil-minus">-</div></div>
+                            </div>
+                            <div class="mil-accordion-content">
+                                <p>Yes. We can integrate your NFT assets directly into OpenSea or help build your own marketplace.</p>
+                            </div>
+                        </div>
+                        <div class="mil-accordion-group mil-up">
+                            <div class="mil-accordion-menu">
+                                <p class="mil-accordion-head">How long does NFT game development take?</p>
+                                <div class="mil-symbol mil-h3"><div class="mil-plus">+</div><div class="mil-minus">-</div></div>
+                            </div>
+                            <div class="mil-accordion-content">
+                                <p>Simple games may take 6–10 weeks; complex projects (with multiplayer, DAO, or metaverse layers) can take 3–6 months.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- footer -->
+                <footer class="mil-dark-bg">
+                    <div class="mi-invert-fix">
+                        <div class="container mil-p-120-60">
+                            <div class="row justify-content-between">
+                                <div class="col-md-4 col-lg-4 mil-mb-60">
+                                    <div class="mil-muted mil-logo mil-up mil-mb-30">We3vision Infotech.</div>
+                                    <p class="mil-light-soft mil-up mil-mb-30">Subscribe our newsletter:</p>
+                                    <form class="mil-subscribe-form mil-up">
+                                        <input type="text" placeholder="Enter our email">
+                                        <button type="submit" class="mil-button mil-icon-button-sm mil-arrow-place"></button>
+                                    </form>
+                                </div>
+                                <div class="col-md-7 col-lg-6">
+                                    <div class="row justify-content-end">
+                                        <div class="col-md-6 col-lg-7">
+                                            <nav class="mil-footer-menu mil-mb-60">
+                                                <ul>
+                                                    <li class="mil-up mil-active"><a href="home-1.html">Home</a></li>
+                                                    <li class="mil-up"><a href="portfolio-1.html">Portfolio</a></li>
+                                                    <li class="mil-up"><a href="services.html">Services</a></li>
+                                                    <li class="mil-up"><a href="contact.html">Contact</a></li>
+                                                    <li class="mil-up"><a href="blog.html">Blog</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                        <div class="col-md-6 col-lg-5">
+                                            <ul class="mil-menu-list mil-up mil-mb-60">
+                                                <li><a href="#." class="mil-light-soft">Privacy Policy</a></li>
+                                                <li><a href="#." class="mil-light-soft">Terms and conditions</a></li>
+                                                <li><a href="#." class="mil-light-soft">Cookie Policy</a></li>
+                                                <li><a href="#." class="mil-light-soft">Careers</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-between flex-sm-row-reverse">
+                                <div class="col-md-7 col-lg-6">
+                                    <div class="row justify-content-between">
+                                        <div class="col-md-6 col-lg-5 mil-mb-60">
+                                            <h6 class="mil-muted mil-up mil-mb-30">Canada</h6>
+                                            <p class="mil-light-soft mil-up">71 South Los Carneros Road, California <span class="mil-no-wrap">+51 174 705 812</span></p>
+                                        </div>
+                                        <div class="col-md-6 col-lg-5 mil-mb-60">
+                                            <h6 class="mil-muted mil-up mil-mb-30">Germany</h6>
+                                            <p class="mil-light-soft mil-up">Leehove 40, 2678 MC De Lier, Netherlands <span class="mil-no-wrap">+31 174 705 811</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-6 mil-mb-60">
+                                    <div class="mil-vert-between">
+                                        <div class="mil-mb-30">
+                                            <ul class="mil-social-icons mil-up">
+                                                <li><a href="#." target="_blank" class="social-icon"> <i class="far fa-circle"></i></a></li>
+                                                <li><a href="#." target="_blank" class="social-icon"> <i class="far fa-circle"></i></a></li>
+                                                <li><a href="#." target="_blank" class="social-icon"> <i class="far fa-circle"></i></a></li>
+                                                <li><a href="#." target="_blank" class="social-icon"> <i class="far fa-circle"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <p class="mil-light-soft mil-up">© Copyright 2023 - Mil. All Rights Reserved.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- hidden elements -->
+                <div class="mil-hidden-elements">
+                    <div class="mil-dodecahedron">
+                        <div class="mil-pentagon"><div></div><div></div><div></div><div></div><div></div></div>
+                        <div class="mil-pentagon"><div></div><div></div><div></div><div></div><div></div></div>
+                        <div class="mil-pentagon"><div></div><div></div><div></div><div></div><div></div></div>
+                        <div class="mil-pentagon"><div></div><div></div><div></div><div></div><div></div></div>
+                        <div class="mil-pentagon"><div></div><div></div><div></div><div></div><div></div></div>
+                        <div class="mil-pentagon"><div></div><div></div><div></div><div></div><div></div></div>
+                        <div class="mil-pentagon"><div></div><div></div><div></div><div></div><div></div></div>
+                        <div class="mil-pentagon"><div></div><div></div><div></div><div></div><div></div></div>
+                        <div class="mil-pentagon"><div></div><div></div><div></div><div></div><div></div></div>
+                        <div class="mil-pentagon"><div></div><div></div><div></div><div></div><div></div></div>
+                        <div class="mil-pentagon"><div></div><div></div><div></div><div></div><div></div></div>
+                        <div class="mil-pentagon"><div></div><div></div><div></div><div></div><div></div></div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
+                        <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z" />
+                    </svg>
+                    <svg width="250" viewBox="0 0 300 1404" fill="none" xmlns="http://www.w3.org/2000/svg" class="mil-lines">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1 892L1 941H299V892C299 809.71 232.29 743 150 743C67.7096 743 1 809.71 1 892ZM0 942H300V892C300 809.157 232.843 742 150 742C67.1573 742 0 809.157 0 892L0 942Z" class="mil-move" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M299 146V97L1 97V146C1 228.29 67.7096 295 150 295C232.29 295 299 228.29 299 146ZM300 96L0 96V146C0 228.843 67.1573 296 150 296C232.843 296 300 228.843 300 146V96Z" class="mil-move" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M299 1H1V1403H299V1ZM0 0V1404H300V0H0Z" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M150 -4.37115e-08L150 1404L149 1404L149 0L150 -4.37115e-08Z" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M150 1324C232.29 1324 299 1257.29 299 1175C299 1092.71 232.29 1026 150 1026C67.7096 1026 1 1092.71 1 1175C1 1257.29 67.7096 1324 150 1324ZM150 1325C232.843 1325 300 1257.84 300 1175C300 1092.16 232.843 1025 150 1025C67.1573 1025 0 1092.16 0 1175C0 1257.84 67.1573 1325 150 1325Z" class="mil-move" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M300 1175H0V1174H300V1175Z" class="mil-move" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M150 678C232.29 678 299 611.29 299 529C299 446.71 232.29 380 150 380C67.7096 380 1 446.71 1 529C1 611.29 67.7096 678 150 678ZM150 679C232.843 679 300 611.843 300 529C300 446.157 232.843 379 150 379C67.1573 379 0 446.157 0 529C0 611.843 67.1573 679 150 679Z" class="mil-move" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M299 380H1V678H299V380ZM0 379V679H300V379H0Z" class="mil-move" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- wrapper end -->
+    <!-- jQuery js -->
+    <script src="js/plugins/jquery.min.js"></script>
+    <!-- swup js -->
+    <script src="js/plugins/swup.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/plugins/swiper.min.js"></script>
+    <!-- fancybox js -->
+    <script src="js/plugins/fancybox.min.js"></script>
+    <!-- gsap js -->
+    <script src="js/plugins/gsap.min.js"></script>
+    <!-- scroll smoother -->
+    <script src="js/plugins/smooth-scroll.js"></script>
+    <!-- scroll trigger js -->
+    <script src="js/plugins/ScrollTrigger.min.js"></script>
+    <!-- scroll to js -->
+    <script src="js/plugins/ScrollTo.min.js"></script>
+    <!-- We3vision Infotech js -->
+    <script src="js/main.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Hamburger menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.header-bar nav');
+        menuToggle.addEventListener('click', function() {
+          nav.classList.toggle('open');
+        });
+        // Dropdowns (existing code)
+        // ... (keep your dropdown JS here)
+      });
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Home Dropdown
+        const homeDropdown = document.getElementById('homeDropdown');
+        const homeDropdownMenu = document.getElementById('homeDropdownMenu');
+        homeDropdown.addEventListener('click', function(e) {
+          e.preventDefault();
+          homeDropdownMenu.classList.toggle('show');
+        });
+        // Portfolio Dropdown
+        const portfolioDropdown = document.getElementById('portfolioDropdown');
+        const portfolioDropdownMenu = document.getElementById('portfolioDropdownMenu');
+        portfolioDropdown.addEventListener('click', function(e) {
+          e.preventDefault();
+          portfolioDropdownMenu.classList.toggle('show');
+        });
+        // Services Dropdown
+        const servicesDropdown = document.getElementById('servicesDropdown');
+        const servicesDropdownMenu = document.getElementById('servicesDropdownMenu');
+        servicesDropdown.addEventListener('click', function(e) {
+          e.preventDefault();
+          servicesDropdownMenu.classList.toggle('show');
+        });
+        // Newsletter Dropdown
+        const newsletterDropdown = document.getElementById('newsletterDropdown');
+        const newsletterDropdownMenu = document.getElementById('newsletterDropdownMenu');
+        newsletterDropdown.addEventListener('click', function(e) {
+          e.preventDefault();
+          newsletterDropdownMenu.classList.toggle('show');
+        });
+        // Pages Dropdown
+        const pagesDropdown = document.getElementById('pagesDropdown');
+        const pagesDropdownMenu = document.getElementById('pagesDropdownMenu');
+        pagesDropdown.addEventListener('click', function(e) {
+          e.preventDefault();
+          pagesDropdownMenu.classList.toggle('show');
+        });
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', function(e) {
+          if (!homeDropdown.contains(e.target) && !homeDropdownMenu.contains(e.target)) {
+            homeDropdownMenu.classList.remove('show');
+          }
+          if (!portfolioDropdown.contains(e.target) && !portfolioDropdownMenu.contains(e.target)) {
+            portfolioDropdownMenu.classList.remove('show');
+          }
+          if (!servicesDropdown.contains(e.target) && !servicesDropdownMenu.contains(e.target)) {
+            servicesDropdownMenu.classList.remove('show');
+          }
+          if (!newsletterDropdown.contains(e.target) && !newsletterDropdownMenu.contains(e.target)) {
+            newsletterDropdownMenu.classList.remove('show');
+          }
+          if (!pagesDropdown.contains(e.target) && !pagesDropdownMenu.contains(e.target)) {
+            pagesDropdownMenu.classList.remove('show');
+          }
+        });
+      });
+    </script>
+
+    <script>
+    document.querySelectorAll('.header-bar .dropdown > .dropdown-toggle').forEach(function(toggle) {
+      toggle.addEventListener('click', function(e) {
+        // Only run on mobile
+        if (window.innerWidth <= 900) {
+          e.preventDefault();
+          // Close other open mega menus
+          document.querySelectorAll('.header-bar .dropdown').forEach(function(drop) {
+            if (drop !== toggle.parentElement) drop.classList.remove('open');
+          });
+          // Toggle current
+          toggle.parentElement.classList.toggle('open');
+        }
+      });
+    });
+
+    // Optional: Close mega menu when clicking outside (mobile)
+    document.addEventListener('click', function(e) {
+      if (window.innerWidth <= 900 && !e.target.closest('.header-bar .dropdown')) {
+        document.querySelectorAll('.header-bar .dropdown').forEach(function(drop) {
+          drop.classList.remove('open');
+        });
+      }
+    });
+    </script>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const technologiesDropdown = document.getElementById('technologiesDropdown');
+      const technologiesDropdownMenu = document.getElementById('technologiesDropdownMenu');
+      technologiesDropdown.addEventListener('click', function(e) {
+        e.preventDefault();
+        technologiesDropdownMenu.classList.toggle('show');
+      });
+
+      // Optional: Close dropdown when clicking outside
+      document.addEventListener('click', function(e) {
+        if (!technologiesDropdown.contains(e.target) && !technologiesDropdownMenu.contains(e.target)) {
+          technologiesDropdownMenu.classList.remove('show');
+        }
+      });
+    });
+    </script>
+
+    <script>
+    // TECHNOLOGIES MEGA MENU SCRIPT
+    document.addEventListener('DOMContentLoaded', function() {
+      const techCategoryItems = document.querySelectorAll('.tech-categories li');
+      const techPanels = document.querySelectorAll('.tech-panel');
+
+      techCategoryItems.forEach(item => {
+        item.addEventListener('click', function() {
+          techCategoryItems.forEach(i => i.classList.remove('active'));
+          techPanels.forEach(p => p.classList.remove('active'));
+          this.classList.add('active');
+          const cat = this.getAttribute('data-category');
+          document.querySelector('.tech-panel[data-category="' + cat + '"]').classList.add('active');
+        });
+      });
+
+      // Show first panel by default
+      if (techCategoryItems.length && techPanels.length) {
+        techCategoryItems[0].classList.add('active');
+        techPanels[0].classList.add('active');
+      }
+    });
+    </script>
+
+    <script>
+    // SERVICES MEGA MENU SCRIPT
+    document.addEventListener('DOMContentLoaded', function() {
+      const serviceCategoryItems = document.querySelectorAll('.mega-menu-categories:not(.tech-categories) li');
+      const servicePanels = document.querySelectorAll('.mega-menu-details:not(.tech-details) .mega-menu-panel');
+
+      serviceCategoryItems.forEach(item => {
+        item.addEventListener('click', function() {
+          serviceCategoryItems.forEach(i => i.classList.remove('active'));
+          servicePanels.forEach(p => p.classList.remove('active'));
+          this.classList.add('active');
+          const cat = this.getAttribute('data-category');
+          document.querySelector('.mega-menu-details:not(.tech-details) .mega-menu-panel[data-category="' + cat + '"]').classList.add('active');
+        });
+      });
+
+      // Show first panel by default
+      if (serviceCategoryItems.length && servicePanels.length) {
+        serviceCategoryItems[0].classList.add('active');
+        servicePanels[0].classList.add('active');
+      }
+    });
+    </script>
+
+</body>
+</html>
