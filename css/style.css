@@ -5490,6 +5490,10 @@ html.is-animating .mil-menu-frame {
     display: none !important;
   }
 }
+
+.mil-banner-content.mil-up {
+  margin-top: 100px; /* adjust as needed */
+}
 /* About Us why choose us */
 .why-choose-us-section{
   background: linear-gradient(135deg, #A80C4C, #090939, #421256, #531C9B);
@@ -5500,6 +5504,18 @@ html.is-animating .mil-menu-frame {
   font-size: 3.5rem; /* Adjust as needed to match your main headings */
   font-weight: bold;
   margin-top: 100px;
-
   letter-spacing: 1px;
+}
+.container.mil-p-0-120 {
+  background: #fff;
+}
+.container.mil-p-120-120 {
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50%-50vw);
+  color: #fff;
+  background: linear-gradient(135deg, #A80C4C, #090939, #421256, #531C9B);
+}
+.mil-center.mil-up.mil-mb-60 {
+  color: #fff;
 }
