@@ -584,7 +584,7 @@ button
   background: linear-gradient(135deg, #F3D7FF, #E2BAD2, #F9C5C5, #C9C9F4);
   color: rgb(0, 0, 0);
   border-radius: 70px;
-  padding: 0 15px 0 50px;
+  padding: 0 20px 0 40px;
   height: 70px;
   text-transform: uppercase;
   font-weight: 500;
@@ -892,8 +892,8 @@ spaces
 }
 
 .mil-p-120-90 {
-  padding-top: 120px;
-  padding-bottom: 90px;
+  padding-top: 100px;
+  padding-bottom: 60px;
 }
 @media screen and (max-width: 992px) {
   .mil-p-120-90 {
@@ -2836,7 +2836,7 @@ blog
 .mil-blog-card .mil-post-descr .mil-post-text {
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  /* -webkit-line-clamp: 2; */
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -4738,11 +4738,6 @@ html.is-animating .mil-menu-frame {
   width: 100%;
 }
 
-.mega-menu-categories {
-  width: 320px;
-  border-right: 1.5px solid rgba(42, 43, 199, 0.2);
-  padding-right: 0;
-}
 
 .mega-menu-categories ul {
   list-style: none;
@@ -4757,10 +4752,8 @@ html.is-animating .mil-menu-frame {
   font-size: 1.18rem;
   color: #2A2BC7;
   border-radius: 10px;
-  margin-bottom: 10px;
   display: flex;
   align-items: center;
-  transition: background 0.2s, color 0.2s;
 }
 
 .mega-menu-categories li.active,
@@ -4777,14 +4770,9 @@ html.is-animating .mil-menu-frame {
   display: inline-block;
   padding: 4px;
   transform: rotate(-45deg);
-  opacity: 0.5;
-  transition: opacity 0.2s;
 }
 
-.mega-menu-categories li.active::after,
-.mega-menu-categories li:hover::after {
-  opacity: 1;
-}
+
 
 .mega-menu-details {
   flex: 1;
@@ -4832,9 +4820,7 @@ html.is-animating .mil-menu-frame {
 
 .mega-menu-panel li a {
   display: block;
-  color: inherit;
   text-decoration: none;
-  transition: color 0.2s;
   padding: 0;
 }
 
@@ -5097,7 +5083,7 @@ html.is-animating .mil-menu-frame {
     font-size: 1.05rem;
 }
 .ar-timeline-v2-checklist ul {
-    background: rgba(40,40,50,0.95);
+    background: rgba(0, 0, 0, 0.158);
     border-radius: 16px;
     padding: 22px 32px;
     color: #fff;
@@ -5241,7 +5227,7 @@ html.is-animating .mil-menu-frame {
 }
 @media (max-width: 900px) {
   .industries-card-grid {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 18px;
   }
   .industries-card {
@@ -5272,7 +5258,7 @@ html.is-animating .mil-menu-frame {
 
 .tech-card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   gap: 32px;
   justify-items: center;
   margin-bottom: 60px;
@@ -5318,7 +5304,7 @@ html.is-animating .mil-menu-frame {
   text-align: center;
   font-size: 2.4rem;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 60px;
 }
 
 
@@ -5489,11 +5475,22 @@ html.is-animating .mil-menu-frame {
     display: none !important;
   }
 }
-
-.mil-banner-content.mil-up {
-  margin-top: 100px; /* adjust as needed */
-}
 /* About Us why choose us */
+.why-choose-us-section{
+  background: linear-gradient(135deg, #A80C4C, #090939, #421256, #531C9B);
+}
+.why-choose-us-title {
+  color: #fff;
+  text-align: center;
+  font-size: 3.5rem; /* Adjust as needed to match your main headings */
+  font-weight: bold;
+  margin-top: 100px;
+  letter-spacing: 1px;
+}
+.mil-banner-content.mil-up {
+  margin-top: 100px;
+}
+
 .why-choose-us-section{
   background: linear-gradient(135deg, #A80C4C, #090939, #421256, #531C9B);
 }
@@ -5519,9 +5516,44 @@ html.is-animating .mil-menu-frame {
   background: linear-gradient(135deg, #A80C4C, #090939, #421256, #531C9B);
 }
 .mil-center.mil-up.mil-mb-60 {
-  color: #fff;
+   color: #fff;
 }
 .mil-partner-frame{
   margin-top: 60px;
-  margin-bottom: -30px;
+  margin-bottom:-30px;
 }
+/* Make the tech-categories list a grid with 4 columns */
+.mega-menu-categories.tech-categories ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px; /* Adjust spacing as needed */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Style the list items for better appearance */
+.mega-menu-categories.tech-categories ul li {
+  color: #2A2BC7;
+  padding: 12px 20px; /* or transparent, or your preferred color */
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.mega-menu-categories.tech-categories li a {
+  display: block;
+  color: #2A2BC7;
+  text-decoration: none!important;
+  padding: 0;
+}
+
+.mega-menu-categories.tech-categories li a:hover {
+  color: #2A2BC7;
+  background: linear-gradient(120deg, #f3e7fa 0%, #f9c6c3 60%, #d1d8f7 100%);
+}
+.mega-menu-categories.tech-categories {
+  display: block;
+}
+ .mil-banner-content .container{
+  margin-bottom: 100px;
+ }
