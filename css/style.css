@@ -2199,11 +2199,11 @@ about
 }
 .mil-about-quote .mil-avatar:after {
   content: ' " ';
-  color: rgb(0, 0, 0);
+  color: rgb(251, 221, 255);
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: rgb(255, 152, 0);
+  background: linear-gradient(135deg, #A80C4C, #090939, #421256, #531C9B);
   position: absolute;
   bottom: 0;
   right: 0;
@@ -2361,7 +2361,7 @@ services
   left: 0;
   height: 4px;
   width: 0;
-  background-color: rgb(255, 152, 0);
+  background: linear-gradient(135deg, #F3D7FF, #E2BAD2, #F9C5C5, #C9C9F4);
   -webkit-transition: 0.6s cubic-bezier(0, 0, 0.3642, 1);
   transition: 0.6s cubic-bezier(0, 0, 0.3642, 1);
 }
