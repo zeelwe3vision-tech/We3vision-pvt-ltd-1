@@ -364,13 +364,12 @@
             <div id="swupMain" class="mil-main-transition">
 
                 <!-- banner -->
-                <div class="mil-inner-banner mil-p-0-120">
+                <div class="mil-inner-banner ">
                     <div class="mil-banner-content mil-up">
                         <div class="mil-animation-frame">
                             <div class="mil-animation mil-position-4 mil-dark mil-scale" data-value-1="6" data-value-2="1.4"></div>
                         </div>
                         <div class="container">
-                            
                             <h1 class="mil-mb-60">Exploring <span class="mil-thin">the World</span> <br> Through Our <span class="mil-thin">Blog</span></h1>
                             <a href="#blog" class="mil-link mil-dark mil-arrow-place mil-down-arrow">
                                 <span>Publications</span>
@@ -400,7 +399,7 @@
 
                                 <a href="publication.html" class="mil-blog-card mil-mb-60">
                                     <div class="mil-cover-frame mil-up">
-                                        <img src="img/blog/1.jpg" alt="cover">
+                                        <img src="img/blog/blog1.webp" alt="cover">
                                     </div>
                                     <div class="mil-post-descr">
                                         <div class="mil-labels mil-up mil-mb-30">
@@ -420,7 +419,7 @@
 
                                 <a href="publication.html" class="mil-blog-card mil-mb-60">
                                     <div class="mil-cover-frame mil-up">
-                                        <img src="img/blog/2.jpg" alt="cover">
+                                        <img src="img/blog/blog2.webp" alt="cover">
                                     </div>
                                     <div class="mil-post-descr">
                                         <div class="mil-labels mil-up mil-mb-30">
@@ -442,9 +441,9 @@
                 <!-- popular end -->
 
                 <!-- blog -->
-                <section>
-                    <div class="container mil-p-120-120">
-                        <div class="row align-items-center mil-mb-30">
+                <section >
+                    <div class="container mil-p-120">
+                        <div class="row align-items-center mil-mb-30" style="background-color:linear-gradient(135deg, #A80C4C, #090939, #421256, #531C9B);">
                             <div class="col-lg-4 mil-mb-30">
                                 <h3 class="mil-up">Categories:</h3>
                             </div>
@@ -466,7 +465,7 @@
 
                                 <a href="publication.html" class="mil-blog-card mil-blog-card-hori mil-more mil-mb-60">
                                     <div class="mil-cover-frame mil-up">
-                                        <img src="img/blog/3.jpg" alt="cover">
+                                        <img src="img/blog/blog3.webp" alt="cover">
                                     </div>
                                     <div class="mil-post-descr">
                                         <div class="mil-labels mil-up mil-mb-30">
@@ -486,7 +485,7 @@
 
                                 <a href="publication.html" class="mil-blog-card mil-blog-card-hori mil-more mil-mb-60">
                                     <div class="mil-cover-frame mil-up">
-                                        <img src="img/blog/4.jpg" alt="cover">
+                                        <img src="img/blog/blog4.webp" alt="cover">
                                     </div>
                                     <div class="mil-post-descr">
                                         <div class="mil-labels mil-up mil-mb-30">
@@ -506,7 +505,7 @@
 
                                 <a href="publication.html" class="mil-blog-card mil-blog-card-hori mil-more mil-mb-60">
                                     <div class="mil-cover-frame mil-up">
-                                        <img src="img/blog/5.jpg" alt="cover">
+                                        <img src="img/blog/blog5.webp" alt="cover">
                                     </div>
                                     <div class="mil-post-descr">
                                         <div class="mil-labels mil-up mil-mb-30">
@@ -526,7 +525,7 @@
 
                                 <a href="publication.html" class="mil-blog-card mil-blog-card-hori mil-more mil-mb-60">
                                     <div class="mil-cover-frame mil-up">
-                                        <img src="img/blog/6.jpg" alt="cover">
+                                        <img src="img/blog/blog6.webp" alt="cover">
                                     </div>
                                     <div class="mil-post-descr">
                                         <div class="mil-labels mil-up mil-mb-30">
@@ -557,8 +556,8 @@
                 <!-- blog end -->
 
                 <!-- call to action -->
-                <section class="mil-soft-bg">
-                    <div class="container mil-p-120-120">
+                <section class="mil-light-bg">
+                    <div class="container mil-p-120-90">
                         <div class="row">
                             <div class="col-lg-10">
 
@@ -584,15 +583,26 @@
                 <!-- Replace footer with shared include -->
                 <div id="footer-placeholder"></div>
                 <script>
-                  fetch('/footer.html')
-                    .then(response => response.text())
-                    .then(data => {
-                      document.getElementById('footer-placeholder').innerHTML = data;
-                    });
+                  function loadFooter() {
+                    fetch('/footer.html')
+                      .then(response => response.text())
+                      .then(data => {
+                        document.getElementById('footer-placeholder').innerHTML = data;
+                      });
+                  }
+                  loadFooter();
+                  document.addEventListener('swup:contentReplaced', loadFooter);
                 </script>
                 <!-- hidden elements -->
                 <div class="mil-hidden-elements">
                     <div class="mil-dodecahedron">
+                        <div class="mil-pentagon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
                         <div class="mil-pentagon">
                             <div></div>
                             <div></div>
