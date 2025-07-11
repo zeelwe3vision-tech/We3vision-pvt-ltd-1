@@ -1148,3 +1148,34 @@ $(function () {
     $(window).on('resize', setupMegaMenuHover);
 
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // For Services Mega Menu
+    const categoryItems = document.querySelectorAll('#servicesDropdownMenu .mega-menu-categories li');
+    const panels = document.querySelectorAll('#servicesDropdownMenu .mega-menu-panel');
+
+    categoryItems.forEach(item => {
+        item.addEventListener('mouseenter', function() {
+            // Remove active from all
+            categoryItems.forEach(i => i.classList.remove('active'));
+            // Add active to hovered
+            this.classList.add('active');
+
+            // Show corresponding panel
+            const cat = this.getAttribute('data-category');
+            panels.forEach(panel => {
+                if (panel.getAttribute('data-category') === cat) {
+                    panel.style.display = 'block';
+                } else {
+                    panel.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    // Optionally, set the first as active on load
+    if (categoryItems.length > 0) {
+        categoryItems[0].dispatchEvent(new Event('mouseenter'));
+    }
+});
+
