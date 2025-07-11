@@ -5651,3 +5651,9 @@ footer .mil-logo img {
   background: linear-gradient(135deg, #A80C4C, #090939, #421256, #531C9B);
 }
 /* --- End Custom Footer Styles --- */
+
+.mega-menu-categories ul li.active {
+    background: #f3d7ff;
+    color: #222;
+    /* Add pointer/arrow if needed */
+}
