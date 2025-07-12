@@ -580,7 +580,7 @@ button
           justify-content: center;
   border: none;
   letter-spacing: 2px;
-  font-size: 12px;
+  font-size: 14px;
   background: linear-gradient(135deg, #F3D7FF, #E2BAD2, #F9C5C5, #C9C9F4);
   color: rgb(0, 0, 0);
   border-radius: 70px;
@@ -1430,11 +1430,11 @@ menu
   -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
 }
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
   .mil-menu-frame .mil-menu-right-frame {
     display: none;
   }
-}
+} */
 @media screen and (max-height: 800px) {
   .mil-menu-frame .mil-menu-right-frame {
     display: none;
@@ -1969,6 +1969,7 @@ dodecahedron
 .mil-position-1 {
   top: 100px;
   right: 100px;
+  
 }
 .mil-position-1 .mil-pentagon div {
   border-top: 0.1px solid rgb(255, 255, 255);
@@ -2711,25 +2712,25 @@ revievs
   }
 }
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-1 {
-  background-image: url(../img/faces/customers/1.jpg);
+  background-image: url(../img/icons/healthcare.png);
 }
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-2 {
-  background-image: url(../img/faces/customers/2.jpg);
+  background-image: url(../img/icons/education.png);
 }
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-3 {
-  background-image: url(../img/faces/customers/3.jpg);
+  background-image: url(../img/icons/corporate.png);
 }
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-4 {
-  background-image: url(../img/faces/customers/4.jpg);
+  background-image: url(../img/icons/e-commerce.png);
 }
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-5 {
-  background-image: url(../img/faces/customers/5.jpg);
+  background-image: url(../img/icons/gaming.png);
 }
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-6 {
-  background-image: url(../img/faces/customers/6.jpg);
+  background-image: url(../img/icons/construction.png);
 }
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-7 {
-  background-image: url(../img/faces/customers/7.jpg);
+  background-image: url(../img/icons/retail.jpg);
 }
 .mil-revi-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   -webkit-box-shadow: inset 0 0 0 4px rgb(255, 152, 0);
@@ -3054,6 +3055,7 @@ footer
   padding: 0 0 0 50px;
   -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+
 }
 .mil-subscribe-form input::-webkit-input-placeholder {
   color: rgb(128, 128, 128);
@@ -5650,10 +5652,303 @@ footer .mil-logo img {
 .arrow{
   background: linear-gradient(135deg, #A80C4C, #090939, #421256, #531C9B);
 }
-/* --- End Custom Footer Styles --- */
 
 .mega-menu-categories ul li.active {
-    background: #f3d7ff;
-    color: #222;
-    /* Add pointer/arrow if needed */
+  background: #f3d7ff;
+  color: #222;
+  /* Add pointer/arrow if needed */
 }
+
+/*techno immersive*/
+         #immersive *,#immersive-services,
+        #immersive-services * {
+            color: #2A2BC7 !important;
+        }
+        /* Modern glassmorphism and card hover effect for immersive services */
+        #immersive-services {
+            background: linear-gradient(135deg, #f3e7fa 0%, #e3e6ff 100%);
+            border-radius: 24px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.10);
+           
+        }
+        #immersive-services .mil-service-card-lg {
+            background: rgba(255, 255, 255, 0.35);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.25);
+            transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s, background 0.3s;
+            overflow: hidden;
+        }
+        #immersive-services .mil-service-card-lg:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 16px 40px 0 rgba(31, 38, 135, 0.18);
+            background: rgba(255,255,255,0.55);
+        }
+        #immersive-services h4.mil-muted {
+            font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.01em;
+            font-size: 1.35rem;
+            margin-left: 15px;
+        }
+        #immersive-services ul.mil-service-list {
+            font-size: 1.08rem;
+            letter-spacing: 0.01em;
+            margin-left: 15px;
+        }
+        #immersive-services .mil-service-card-lg img {
+            border-radius: 16px;
+            box-shadow: 0 2px 12px 0 rgba(31, 38, 135, 0.07);
+        }
+        #immersive-services .mil-service-card-lg li {
+            padding-left: 0.5em;
+            margin-bottom: 0.3em;
+        }
+        @media (max-width: 991px) {
+            #immersive-services .mil-service-card-lg {
+                margin-bottom: 24px;
+            }
+        }
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #f7e1f5 40%, #e0f7fa 100%)!important;
+}
+.hero-bg-static {
+  background: none !important;
+}
+.arkub-tech-sections {
+  background: transparent !important;
+}
+.hero-arkub {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 1;
+}
+.hero-bg-static {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(135deg, #f3e7fa 0%, #e3e6ff 100%);
+  z-index: 0;
+  filter: blur(0.5px) brightness(1);
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #2A2BC7;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+.hero-title {
+  color: #2323c4;
+  font-family: "Outfit", sans-serif;
+  font-weight: 800;
+  text-shadow: none;
+  text-shadow: 0 4px 20px rgba(79, 0, 250, 0.3), 0 0 12px rgba(143, 92, 255, 0.2);
+  margin-bottom: 1.5rem;
+}
+.hero-title .bold {
+  color: #2323c4;
+  font-weight: 300;
+  text-shadow: none;
+  text-shadow: 0 4px 20px rgba(79, 0, 250, 0.3), 0 0 12px rgba(143, 92, 255, 0.2);
+}
+.hero-title .thin {
+  color: #2323c4;
+  font-weight: 300;
+  text-shadow: none;
+  text-shadow: 0 4px 20px rgba(79, 0, 250, 0.3), 0 0 12px rgba(143, 92, 255, 0.2);
+}
+@keyframes hero-title-fadein {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: none; }
+}
+.hero-title .highlight {
+ color: #2323c4;
+  font-family: "Outfit", sans-serif;
+  font-weight: 800;
+  text-shadow: none;
+  text-shadow: 0 4px 20px rgba(79, 0, 250, 0.3), 0 0 12px rgba(143, 92, 255, 0.2);
+  margin-bottom: 1.5rem;
+}
+@keyframes highlight-pulse {
+  0% { filter: brightness(1.1); }
+  100% { filter: brightness(1.3) drop-shadow(0 0 8px #e3e6ff); }
+}
+.hero-desc {
+  font-size: 1.25rem;
+  color: #2b2b8e;
+  margin-bottom: 2.2rem;
+  text-shadow: 0 2px 12px rgba(0, 54, 250, 0.2), 0 1px 6px rgba(0, 221, 255, 0.3);
+  animation: hero-title-fadein 1.8s 0.3s cubic-bezier(.4,2,.6,1) backwards;
+}
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #F3D7FF, #E2BAD2, #F9C5C5, #C9C9F4);
+  color: rgb(0, 0, 0);
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 0 20px 0 40px;
+  height: 60px;
+  border-radius: 70px;
+  border: none;
+  text-decoration: none;
+  transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+  animation: hero-title-fadein 2.2s 0.6s cubic-bezier(.4,2,.6,1) backwards;
+}
+.hero-cta:hover {
+  transform: scale(1.015);
+  filter: brightness(110%);
+}
+/* Arkub-style Technology Sections */
+.arkub-tech-sections {
+  width: 100vw;
+  background: linear-gradient(135deg, #f3e7fa 0%, #e3e6ff 100%);
+  padding: 0 0 4rem 0;
+}
+.arkub-tech-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4vw;
+  padding: 5rem 0 5rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.arkub-tech-row.reverse {
+  flex-direction: row-reverse;
+}
+.arkub-tech-img-wrap {
+  flex: 1 1 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 260px;
+}
+.arkub-tech-img {
+  width: 450px;
+  height: 260px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 32px;
+  box-shadow: 0 8px 32px 0 #e3e6ff88, 0 0 24px 0 #8f5cff44;
+  transition: transform 0.5s cubic-bezier(.4,2,.6,1);
+  animation: floatY 2s ease-in-out infinite alternate;
+}
+@keyframes floatY {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-18px); }
+}
+@media (max-width: 600px) {
+  .arkub-tech-img {
+    width: 90vw;
+    height: 38vw;
+    min-height: 140px;
+    max-height: 220px;
+  }
+}
+.arkub-tech-img:hover {
+  transform: scale(1.06) rotateZ(-2deg) skewY(1deg);
+}
+.arkub-tech-content {
+  flex: 1 1 45%;
+  color: #2A2BC7;
+  padding: 0 2vw;
+  text-align: left;
+}
+.arkub-tech-title {
+  color: #2323c4;
+  font-family: "Outfit", sans-serif;
+  font-weight: 800;
+  text-shadow: none;
+  text-shadow: 0 4px 20px rgba(79, 0, 250, 0.3), 0 0 12px rgba(143, 92, 255, 0.2);
+  margin-bottom: 1.5rem;
+}
+.arkub-tech-desc, .arkub-tech-summary {
+  background: linear-gradient(90deg, #1f00fa 0%, #0900ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 2px 12px rgba(79, 0, 250, 0.3);
+  font-size: 1.18rem;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  transition: text-shadow 0.3s;
+}
+.arkub-tech-desc:hover, .arkub-tech-summary:hover {
+  text-shadow: 0 4px 24px rgba(79, 0, 250, 0.448), 0 0 16px rgba(144, 92, 255, 0.086);
+}
+@media (max-width: 991px) {
+  .hero-title { font-size: 2rem; }
+  .arkub-tech-row, .arkub-tech-row.reverse {
+    flex-direction: column;
+    gap: 2.2rem;
+    padding: 3rem 0 3rem 0;
+  }
+  .arkub-tech-img { max-width: 90vw; }
+  .arkub-tech-content { text-align: center; padding: 0 1vw; }
+}
+.arkub-tech-row, .arkub-tech-row.reverse {
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.8s cubic-bezier(.4,2,.6,1), transform 0.8s cubic-bezier(.4,2,.6,1);
+}
+.arkub-tech-row.visible, .arkub-tech-row.reverse.visible {
+  opacity: 1;
+  transform: none;
+}
+.arkub-tech-img {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.8s cubic-bezier(.4,2,.6,1), transform 0.8s cubic-bezier(.4,2,.6,1);
+}
+.arkub-tech-row.visible .arkub-tech-img,
+.arkub-tech-row.reverse.visible .arkub-tech-img {
+  opacity: 1;
+  transform: scale(1);
+}
+.arkub-tech-content {
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.8s 0.2s cubic-bezier(.4,2,.6,1), transform 0.8s 0.2s cubic-bezier(.4,2,.6,1);
+}
+.arkub-tech-row.visible .arkub-tech-content,
+.arkub-tech-row.reverse.visible .arkub-tech-content {
+  opacity: 1;
+  transform: none;
+}
+
+footer svg.mil-arrow {
+  background: linear-gradient(135deg, #A80C4C, #090939, #421256, #531C9B) !important;
+  border-radius: 50%;
+  padding: 10px;
+  /* Optional: set width/height if needed */
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+footer svg.mil-arrow path {
+  fill: #fff !important; /* White arrow for contrast */
+}
+
+.mil-scale {
+  transition: transform 0.5s cubic-bezier(.77,0,.18,1);
+  will-change: transform;
+}
+.mil-scale:hover {
+  transform: scale(1.2);
+}
+
