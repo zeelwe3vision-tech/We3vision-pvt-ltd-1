@@ -5660,12 +5660,6 @@ footer svg.mil-arrow path {
   fill: #fff !important; /* White arrow for contrast */
 }
 
-.mega-menu-categories ul li.active {
-  background: #f3d7ff;
-  color: #222;
-  /* Add pointer/arrow if needed */
-}
-
 /*techno immersive*/
          #immersive *,#immersive-services,
         #immersive-services * {
