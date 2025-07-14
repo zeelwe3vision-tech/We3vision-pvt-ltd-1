@@ -499,7 +499,7 @@ link
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 12px;
+  font-size: 14px;
 }
 .mil-link svg {
   margin-left: 15px;
@@ -1929,7 +1929,7 @@ lines
   }
 }
 .mil-lines-place .mil-lines path, .mil-lines-place .mil-lines rect, .mil-lines-place .mil-lines line {
-  stroke: rgb(0, 0, 0);
+  stroke: #2A2BC7 !important;
 }
 .mil-lines-place .mil-lines .mil-move {
   -webkit-animation: move 10s linear infinite;
@@ -5660,57 +5660,12 @@ footer svg.mil-arrow path {
   fill: #fff !important; /* White arrow for contrast */
 }
 
+
+
 /*techno immersive*/
          #immersive *,#immersive-services,
         #immersive-services * {
             color: #2A2BC7 !important;
-        }
-        /* Modern glassmorphism and card hover effect for immersive services */
-        #immersive-services {
-            background: linear-gradient(135deg, #f3e7fa 0%, #e3e6ff 100%);
-            border-radius: 24px;
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.10);
-           
-        }
-        #immersive-services .mil-service-card-lg {
-            background: rgba(255, 255, 255, 0.35);
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-radius: 20px;
-            border: 1px solid rgba(255,255,255,0.25);
-            transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s, background 0.3s;
-            overflow: hidden;
-        }
-        #immersive-services .mil-service-card-lg:hover {
-            transform: translateY(-8px) scale(1.03);
-            box-shadow: 0 16px 40px 0 rgba(31, 38, 135, 0.18);
-            background: rgba(255,255,255,0.55);
-        }
-        #immersive-services h4.mil-muted {
-            font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
-            font-weight: 700;
-            letter-spacing: 0.01em;
-            font-size: 1.35rem;
-            margin-left: 15px;
-        }
-        #immersive-services ul.mil-service-list {
-            font-size: 1.08rem;
-            letter-spacing: 0.01em;
-            margin-left: 15px;
-        }
-        #immersive-services .mil-service-card-lg img {
-            border-radius: 16px;
-            box-shadow: 0 2px 12px 0 rgba(31, 38, 135, 0.07);
-        }
-        #immersive-services .mil-service-card-lg li {
-            padding-left: 0.5em;
-            margin-bottom: 0.3em;
-        }
-        @media (max-width: 991px) {
-            #immersive-services .mil-service-card-lg {
-                margin-bottom: 24px;
-            }
         }
         body {
             background: linear-gradient(135deg, #f5f7fa 0%, #f7e1f5 40%, #e0f7fa 100%)!important;
@@ -5722,8 +5677,9 @@ footer svg.mil-arrow path {
   background: transparent !important;
 }
 .hero-arkub {
+  word-spacing: 5px;
   position: relative;
-  min-height: 100vh;
+  max-height: 100vh;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -5743,6 +5699,8 @@ footer svg.mil-arrow path {
   z-index: 2;
   text-align: center;
   color: #2A2BC7;
+
+  max-height: 60vh;
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem 1rem;
@@ -5945,3 +5903,54 @@ footer svg.mil-arrow path {
     display: flex !important;
   }
 }
+
+@media (max-width: 800px) {
+  .hero-title {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+  .hero-content {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    margin-top: 0 !important;
+  }
+  .hero-bg-static {
+    min-height: 0 !important;
+    height: auto !important;
+  }
+  .hero-arkub, .hero-bg-static, .mil-banner {
+    min-height: 60vh !important;
+    height: auto !important;
+    padding-top: 0 !important;
+  }
+  .mil-banner .mil-banner-content {
+    padding-bottom: 40px !important;
+    margin-top: 0px !important;
+    padding-top: 150px;
+  }
+  .mil-banner-content.mil-up {
+    margin-top: 30px !important;
+    margin-bottom: 70px!important;
+  }
+}
+
+@media (max-width: 2000px) {
+  
+  .hero-arkub, .hero-bg-static, .mil-banner {
+    min-height: 60vh !important;
+    height: auto !important;
+    padding-top: 0 !important;
+  }
+  .mil-banner .mil-banner-content {
+    padding-bottom: 40px !important;
+    margin-top: 0px !important;
+    padding-top: 150px;
+  }
+  .mil-banner-content.mil-up {
+    margin-top: 30px !important;
+    margin-bottom: 200px!important;
+  }
+}
+
+
+
