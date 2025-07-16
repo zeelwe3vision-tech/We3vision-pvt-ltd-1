@@ -2564,7 +2564,6 @@ team
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
   opacity: 0;
   -webkit-transform: translateY(15px);
           transform: translateY(15px);
@@ -5998,7 +5997,8 @@ footer svg.mil-arrow path {
 }
 
 
-/* --- Timeline Section Styles (moved from about.html) --- */
+/* ─── Zig-Zag Horizontal Timeline ───────────────────────── */
+
 .timeline {
   position: relative;
   padding: 100px 0;
@@ -6022,6 +6022,7 @@ footer svg.mil-arrow path {
 }
 .timeline-row.top { transform: translateY(-80px); }
 .timeline-row.bottom { transform: translateY(80px); }
+
 .event {
   background: #fff;
   padding: 20px;
@@ -6043,6 +6044,7 @@ footer svg.mil-arrow path {
   font-weight: bold;
   color: #222;
 }
+
 .timeline-marker {
   width: 16px;
   height: 16px;
@@ -6051,6 +6053,18 @@ footer svg.mil-arrow path {
   border-radius: 4px;
   margin: 20px auto;
 }
+/* .mil-timeline-horizontal-cards {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 60px auto 40px auto;
+  padding: 60px 0 40px 0;
+  background: linear-gradient(90deg, #f5eefd 70%, #e0e7ff 100%);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 rgba(42,43,199,0.06);
+  overflow-x: auto;
+} */
+
 .mil-timeline-horizontal-cards-line {
   position: absolute;
   top: 62%;
@@ -6061,6 +6075,7 @@ footer svg.mil-arrow path {
   border-radius: 2px;
   z-index: 1;
 }
+
 .mil-timeline-horizontal-cards-items {
   display: flex;
   justify-content: space-between;
@@ -6071,6 +6086,7 @@ footer svg.mil-arrow path {
   min-width: 100%;
   margin: 0 auto;
 }
+
 .mil-timeline-horizontal-cards-item {
   display: flex;
   flex-direction: column;
@@ -6106,18 +6122,22 @@ footer svg.mil-arrow path {
     position: relative;
     top: 140px;
 }
+
+
 .mil-timeline-horizontal-cards-date {
   color: #2A2BC7;
   font-weight: 700;
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
+
 .mil-timeline-horizontal-cards-content {
   font-size: 1rem;
   color: #222;
   font-weight: 500;
   letter-spacing: 0.2px;
 }
+
 .mil-timeline-horizontal-cards-item:before {
   content: '';
   display: block;
@@ -6133,6 +6153,7 @@ footer svg.mil-arrow path {
   z-index: 1;
   box-shadow: 0 2px 8px 0 rgba(42,43,199,0.10);
 }
+
 .mil-timeline-horizontal-cards-card.top::before,
 .mil-timeline-horizontal-cards-card.bottom::before {
     opacity: 0.8;
@@ -6144,17 +6165,22 @@ footer svg.mil-arrow path {
   z-index: 2;
   transform: translateX(-50%);
 }
+
 .mil-timeline-horizontal-cards-card.top::before {
   /* Vertical line from horizontal line up to top card */
   height: 28px;
   top: 178px;
   z-index: 1;
 }
+
 .mil-timeline-horizontal-cards-card.bottom::before {
   /* Vertical line from horizontal line down to bottom card */
   height: 30px;
   bottom: 178px;
 }
+
+
+
 @media (max-width: 1200px) {
   .mil-timeline-horizontal-cards {
     background: none !important;
@@ -6219,8 +6245,88 @@ footer svg.mil-arrow path {
     box-sizing: border-box;
     overflow-wrap: break-word;
     position: relative;
+    z-index: 3;
+    padding: 24px 10px;
+    font-size: 14px;
+  }
+  .mil-timeline-horizontal-cards-date {
+    color: #2A2BC7;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .mil-timeline-horizontal-cards-card.top,
+  .mil-timeline-horizontal-cards-card.bottom {
+    top: 0;
+    bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .mil-timeline-horizontal-cards-card.top::before,
+  .mil-timeline-horizontal-cards-card.bottom::before {
+    display: none;
   }
 }
 
 
+@media (max-width: 900px) {
+  .header-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    height: 56px;
+    background: #fff;
+    border-radius: 0;
+    box-shadow: 0 2px 8px rgba(42,43,199,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .header-bar .logo img {
+    height: 38px !important;
+    width: auto;
+    margin-left: -40px;
+    display: block;
+  }
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    padding: 8px;
+    margin-left: 0;
+    cursor: pointer;
+    z-index: 1100;
+  }
+  .menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 4px;
+    background: #2A2BC7;
+    margin: 5px 0;
+    border-radius: 2px;
+    transition: all 0.3s;
+  }
+  .header-bar nav {
+    display: none;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    width: 100vw;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(42,43,199,0.08);
+    flex-direction: column;
+    padding: 16px 0;
+  }
+  .header-bar nav.open {
+    display: flex;
+  }
+  .header-bar nav a {
+    font-size: 1.1rem;
+    padding: 12px 24px;
+    display: block;
+    text-align: left;
+  }
+}
 
