@@ -1302,3 +1302,25 @@ $(function () {
 
 });
 
+// Mindmap Section Animation
+(function() {
+  document.addEventListener("DOMContentLoaded", function() {
+    function revealMindmap() {
+      var el = document.querySelector('.mindmap-flex');
+      if (!el) return;
+      var rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 100) {
+        el.classList.add('visible');
+        el.querySelectorAll('.mindmap-col, .mindmap-center').forEach(function(child, i) {
+          setTimeout(() => child.classList.add('visible'), 100 + i * 150);
+        });
+        window.removeEventListener('scroll', revealMindmap);
+      }
+    }
+    document.querySelectorAll('.mindmap-flex, .mindmap-col, .mindmap-center').forEach(function(el) {
+      el.classList.add('mindmap-animate');
+    });
+    window.addEventListener('scroll', revealMindmap);
+    revealMindmap();
+  });
+})();
