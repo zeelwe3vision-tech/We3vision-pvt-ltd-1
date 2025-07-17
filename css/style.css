@@ -921,7 +921,7 @@ spaces
 }
 
 .mil-p-120-60 {
-  padding-top: 120px;
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 @media screen and (max-width: 992px) {
@@ -2714,24 +2714,31 @@ revievs
 }
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-1 {
   background-image: url(../img/icons/healthcare.png);
+  background-color: pink;
 }
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-2 {
   background-image: url(../img/icons/education.png);
+  background-color: pink;
 }
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-3 {
   background-image: url(../img/icons/corporate.png);
+  background-color: pink;
 }
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-4 {
   background-image: url(../img/icons/e-commerce.png);
+  background-color: pink;
 }
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-5 {
   background-image: url(../img/icons/gaming.png);
+  background-color: pink;
 }
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-6 {
   background-image: url(../img/icons/construction.png);
+  background-color: pink;
 }
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-7 {
-  background-image: url(../img/icons/retail.jpg);
+  background-image: url(../img/icons/retail.png);
+  background-color: pink;
 }
 .mil-revi-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   position: relative;
@@ -4320,10 +4327,7 @@ html.is-animating .mil-menu-frame {
   width: 100%;
 }
 
-.header-bar nav a:hover,
-.header-bar nav .dropdown-toggle:hover {
-  color: #a259f7;
-}
+
 
 .dropdown-menu {
   border-radius: 12px;
@@ -4358,7 +4362,7 @@ html.is-animating .mil-menu-frame {
 .menu-toggle span {
   height: 3px;
   width: 100%;
-  background: #a259f7;
+  /* background: #a259f7; */
   margin: 5px 0;
   border-radius: 2px;
   display: block;
@@ -4422,10 +4426,7 @@ html.is-animating .mil-menu-frame {
   font-size: 1em;
   transition: background 0.2s, color 0.2s;
 }
-.dropdown-menu a:hover {
-  color: #a259f7;
-  background: #f5f6fa;
-}
+
 .dropdown-menu.show {
   display: block;
 }
@@ -4516,8 +4517,7 @@ html.is-animating .mil-menu-frame {
 }
 
 .dropdown-menu a:hover {
-  color: #a259f7;
-  background: #f5f6fa;
+ 
   transform: translateX(6px) scale(1.04);
   box-shadow: 0 2px 8px rgba(0,188,212,0.08);
 }
@@ -4846,7 +4846,6 @@ html.is-animating .mil-menu-frame {
 
 .mega-menu-panel li a:hover {
   color: #2A2BC7;
-  text-decoration: underline;
 }
 .quick-enquiry-btn {
   display: flex;
@@ -5565,10 +5564,7 @@ html.is-animating .mil-menu-frame {
   padding: 0;
 }
 
-.mega-menu-categories.tech-categories li a:hover {
-  color: #2A2BC7;
-  background: linear-gradient(120deg, #f3e7fa 0%, #f9c6c3 60%, #d1d8f7 100%);
-}
+
 .mega-menu-categories.tech-categories {
   display: block;
 }
@@ -6330,3 +6326,320 @@ footer svg.mil-arrow path {
   }
 }
 
+@media (min-width: 901px) {
+  .header-bar .dropdown:hover > .dropdown-menu,
+  .header-bar .dropdown:focus-within > .dropdown-menu {
+    display: block !important;
+  }
+}
+
+@media (min-width: 901px) {
+  .header-bar .dropdown.open > .dropdown-menu {
+    display: block !important;
+    pointer-events: auto;
+  }
+}
+
+/* --- Mindmap Section Styles --- */
+.mindmap-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.mindmap-col {
+  flex: 1 1 320px;
+  max-width: 400px;
+  min-width: 260px;
+  padding: 0 10px;
+}
+.mindmap-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #181C4A;
+}
+.mindmap-subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.mindmap-problems .mindmap-subtitle {
+  color: #B30000;
+}
+.mindmap-solutions .mindmap-subtitle {
+  color: #2A2BC7;
+}
+.mindmap-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.mindmap-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 18px;
+  font-size: 1rem;
+}
+.mindmap-list li:last-child {
+  margin-bottom: 0;
+}
+.mindmap-list .icon-x {
+  color: #ff3b3b;
+  font-size: 1.3rem;
+  margin-right: 10px;
+}
+.mindmap-list .icon-check {
+  color: #2A2BC7;
+  font-size: 1.3rem;
+  margin-right: 10px;
+}
+.mindmap-center {
+  flex: 0 0 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+.mindmap-circle {
+  background: radial-gradient(circle,#eaf2fb 60%,#f7faff 100%);
+  box-shadow: 0 0 32px #b3d0f7;
+  border-radius: 50%;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 8px solid #c6e0fa;
+  position: relative;
+}
+.mindmap-circle-text {
+  font-size: 1.3rem;
+  color: #181C4A;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.mindmap-circle-logo {
+  font-size: 2.5rem;
+  color: #2A2BC7;
+  font-weight: 800;
+  letter-spacing: -2px;
+  margin-top: 8px;
+}
+.mindmap-svg {
+  position: absolute;
+  top: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+.mindmap-svg.left {
+  left: -210px;
+}
+.mindmap-svg.right {
+  right: -210px;
+}
+@media (max-width: 991px) {
+  .mindmap-flex {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  .mindmap-col, .mindmap-center {
+    max-width: 100% !important;
+    min-width: 0 !important;
+    margin-bottom: 32px;
+  }
+  .mindmap-col:last-child, .mindmap-center:last-child {
+    margin-bottom: 0;
+  }
+  .mindmap-svg {
+    display: none !important;
+  }
+}
+/* --- End Mindmap Section Styles --- */
+
+/* --- Mindmap UI Section (Pixel-Perfect) --- */
+.mindmap-ui-section {
+  margin-bottom: 60px;
+}
+.mindmap-ui-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #181C4A;
+  margin-bottom: 8px;
+  letter-spacing: -1px;
+}
+.mindmap-ui-subtitle {
+  text-align: center;
+  color: #6c6c6c;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+.mindmap-ui-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  position: relative;
+}
+.mindmap-ui-col {
+  flex: 1 1 320px;
+  max-width: 370px;
+  min-width: 240px;
+  padding: 0 10px;
+  position: relative;
+  z-index: 2;
+}
+.mindmap-ui-center {
+  flex: 0 0 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+}
+.mindmap-ui-circle {
+  background: radial-gradient(circle,#eaf2fb 60%,#f7faff 100%);
+  box-shadow: 0 0 48px 0 #b3d0f7, 0 0 0 12px #eaf2fb;
+  border-radius: 50%;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 8px solid #c6e0fa;
+  position: relative;
+  margin: 0 10px;
+}
+.mindmap-ui-circle-text {
+  font-size: 1.25rem;
+  color: #181C4A;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.mindmap-ui-logo {
+  font-size: 2.5rem;
+  color: #2A2BC7;
+  font-weight: 800;
+  letter-spacing: -2px;
+  margin-top: 8px;
+}
+.mindmap-ui-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #181C4A;
+  margin-bottom: 0;
+  letter-spacing: -1px;
+}
+.mindmap-ui-subheading {
+  color: #B30000;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.mindmap-ui-blue {
+  color: #1976d2 !important;
+}
+.mindmap-ui-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.mindmap-ui-list li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 28px;
+  font-size: 1.08rem;
+  font-weight: 400;
+  min-height: 40px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.mindmap-ui-list li:last-child {
+  margin-bottom: 0;
+}
+.icon-x {
+  color: #e53935;
+  font-size: 1.3rem;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+.icon-check {
+  color: #1976d2;
+  font-size: 1.3rem;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+.mindmap-ui-bold-red {
+  color: #e53935;
+  font-weight: 600;
+}
+.mindmap-ui-bold-blue {
+  color: #1976d2;
+  font-weight: 600;
+}
+.mindmap-ui-line {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 1;
+}
+.mindmap-ui-line.left {
+  left: -120px;
+}
+.mindmap-ui-line.right {
+  right: -120px;
+}
+.mindmap-ui-problems .mindmap-ui-list li {
+  justify-content: flex-end;
+  text-align: right;
+  padding-right: 18px;
+}
+.mindmap-ui-solutions .mindmap-ui-list li {
+  justify-content: flex-start;
+  text-align: left;
+  padding-left: 18px;
+}
+.mindmap-ui-problems .mindmap-ui-line.left {
+  left: -120px;
+}
+.mindmap-ui-solutions .mindmap-ui-line.right {
+  right: -120px;
+}
+@media (max-width: 1200px) {
+  .mindmap-ui-line.left, .mindmap-ui-line.right {
+    display: none;
+  }
+  .mindmap-ui-flex {
+    gap: 0;
+  }
+}
+@media (max-width: 991px) {
+  .mindmap-ui-flex {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .mindmap-ui-col, .mindmap-ui-center {
+    max-width: 100% !important;
+    min-width: 0 !important;
+    margin-bottom: 32px;
+  }
+  .mindmap-ui-col:last-child, .mindmap-ui-center:last-child {
+    margin-bottom: 0;
+  }
+  .mindmap-ui-line {
+    display: none !important;
+  }
+  .mindmap-ui-circle {
+    margin: 0 auto 32px auto;
+  }
+}
+/* --- End Mindmap UI Section --- */
