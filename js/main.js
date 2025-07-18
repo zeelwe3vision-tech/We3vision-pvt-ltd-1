@@ -1078,14 +1078,16 @@ $(function () {
 
     // Dropdown toggle functionality
     $('.dropdown-toggle').on('click', function(e) {
-        e.preventDefault();
-        var $dropdown = $(this).closest('.dropdown');
-        
-        // Close other dropdowns
-        $('.dropdown').not($dropdown).removeClass('open').removeClass('show');
-        
-        // Toggle current dropdown
-        $dropdown.toggleClass('open').toggleClass('show');
+        if ($(window).width() <= 900) {
+            e.preventDefault();
+            var $dropdown = $(this).closest('.dropdown');
+            
+            // Close other dropdowns
+            $('.dropdown').not($dropdown).removeClass('open').removeClass('show');
+            
+            // Toggle current dropdown
+            $dropdown.toggleClass('open').toggleClass('show');
+        }
     });
 
 
@@ -1101,7 +1103,7 @@ $(function () {
             // Delay navigation slightly to allow classes to be removed
             setTimeout(() => {
                 window.location.href = href;
-            }, 10); // You can adjust this delay if needed
+            }, 100); // You can adjust this delay if needed
         }
     });
     
@@ -1300,27 +1302,94 @@ $(function () {
         });
     }
 
+    // Desktop hover: open dropdown on hover, close on mouseleave
+    if (window.innerWidth > 900) {
+        let dropdownTimeout;
+      
+        $('.header-bar .dropdown').each(function() {
+          const $dropdown = $(this);
+      
+          $dropdown.on('mouseenter', function() {
+            clearTimeout(dropdownTimeout); // cancel any close timeout
+            $dropdown.addClass('open');
+          });
+      
+          $dropdown.on('mouseleave', function() {
+            // Delay closing to give the user time to interact with the menu
+            dropdownTimeout = setTimeout(() => {
+              $dropdown.removeClass('open');
+            }, 300); // Adjust delay as needed
+          });
+      
+          // Keep dropdown open while hovering inside the mega menu
+          $dropdown.find('.mega-menu').on('mouseenter', function () {
+            clearTimeout(dropdownTimeout);
+          });
+      
+          $dropdown.find('.mega-menu').on('mouseleave', function () {
+            dropdownTimeout = setTimeout(() => {
+              $dropdown.removeClass('open');
+            }, 300);
+          });
+      
+          // Close dropdown ONLY after clicking a mega-menu category
+          $dropdown.find('.mega-menu-categories li').on('click', function () {
+            $dropdown.removeClass('open');
+          });
+        });
+      }
 });
 
 // Mindmap Section Animation
 (function() {
-  document.addEventListener("DOMContentLoaded", function() {
-    function revealMindmap() {
-      var el = document.querySelector('.mindmap-flex');
-      if (!el) return;
-      var rect = el.getBoundingClientRect();
-      if (rect.top < window.innerHeight - 100) {
-        el.classList.add('visible');
-        el.querySelectorAll('.mindmap-col, .mindmap-center').forEach(function(child, i) {
-          setTimeout(() => child.classList.add('visible'), 100 + i * 150);
-        });
-        window.removeEventListener('scroll', revealMindmap);
+    document.addEventListener("DOMContentLoaded", function() {
+      function revealMindmap() {
+        var el = document.querySelector('.mindmap-flex');
+        if (!el) return;
+        var rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          el.classList.add('visible');
+          el.querySelectorAll('.mindmap-col, .mindmap-center').forEach(function(child, i) {
+            setTimeout(() => child.classList.add('visible'), 100 + i * 150);
+          });
+          window.removeEventListener('scroll', revealMindmap);
+        }
+      }
+      document.querySelectorAll('.mindmap-flex, .mindmap-col, .mindmap-center').forEach(function(el) {
+        el.classList.add('mindmap-animate');
+      });
+      window.addEventListener('scroll', revealMindmap);
+      revealMindmap();
+    });
+  })();
+  
+  
+  // Parallax/scroll animation for mindmap section
+  (function() {
+    var section = document.querySelector('.parallax-animate');
+    var left = document.querySelector('.slide-in-left');
+    var right = document.querySelector('.slide-in-right');
+    // var circle = document.querySelector('.circle-rotate'); // No longer needed
+    var animated = false;
+    function animateParallax() {
+      if (!section || !left || !right) return;
+      var rect = section.getBoundingClientRect();
+      var windowHeight = window.innerHeight;
+      if (rect.top < windowHeight - 100 && rect.bottom > 100) {
+        // Animate in left/right columns
+        left.classList.add('visible');
+        right.classList.add('visible');
+        // No circle rotation
+        animated = true;
+      } else if (animated) {
+        // Reset if out of view
+        left.classList.remove('visible');
+        right.classList.remove('visible');
+        // No circle rotation
+        animated = false;
       }
     }
-    document.querySelectorAll('.mindmap-flex, .mindmap-col, .mindmap-center').forEach(function(el) {
-      el.classList.add('mindmap-animate');
-    });
-    window.addEventListener('scroll', revealMindmap);
-    revealMindmap();
-  });
-})();
+    window.addEventListener('scroll', animateParallax);
+    animateParallax();
+  })();
+  
