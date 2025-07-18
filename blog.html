@@ -25,7 +25,7 @@
 <body>
 
     <div class="header-bar">
-         <div class="logo" style="margin-left: 40px;" ><img src="img/logo/logo_transparent.png" alt="" height="45px" width="45px"></div>
+        <div class="logo" ><img src="img/logo/logo_transparent.png" alt="" height="40px" width="45px"></div>
         <button class="menu-toggle" aria-label="Open menu">
             <span></span>
             <span></span>
@@ -37,7 +37,8 @@
           </div>
     
     
-          <a href="/about.html" class="nav-item">About Us</a>
+         <div class="dropdown">
+    <a href="/about.html" class="dropdown-toggle">About Us</a></div>
     
           
           <div class="dropdown" id="servicesDropdown">
@@ -154,29 +155,33 @@
           </div>
     
           <div class="dropdown">
-            <a href="#" class="dropdown-toggle" id="portfolioDropdown"><span>Portfolio</span><span class="chevron-arrow"></span></a>
-            <div class="dropdown-menu" id="portfolioDropdownMenu">
-              <a href="/pages/portfolio/portfolio-1.html">Grid type 1</a>
-              <a href="/pages/portfolio/portfolio-2.html">Grid type 2</a>
-              <a href="/pages/portfolio/portfolio-3.html">Slider</a>
-            </div>
+            <a href="#" class="dropdown-toggle" id="portfolioDropdown"><span>Portfolio</span></a>
           </div>
-          
           <div class="dropdown">
             <a href="#" class="dropdown-toggle" id="newsletterDropdown"><span>Blog</span><span class="chevron-arrow"></span></a>
-            <div class="dropdown-menu" id="newsletterDropdownMenu">
-              <a href="blog.html">Blog List</a>
-              <a href="publication.html">Publication</a>
+            <div class="dropdown-menu mega-menu" id="newsletterDropdownMenu">
+              <div class="mega-menu-content">
+                <div class="mega-menu-categories tech-categories">
+                  <ul>
+                    <li><a class="active" href="/blog.html">Blog List</a></li>
+                    <li><a href="/publication.html">Publication</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
           <div class="dropdown">
             <a href="#" class="dropdown-toggle" id="pagesDropdown"><span>Company</span><span class="chevron-arrow"></span></a>
-            <div class="dropdown-menu" id="pagesDropdownMenu">
-              <a href="contact.html">Contact Us</a>
-              <a href="#">Careers</a>
-              <a href="#">Privacy Policy</a>
-              <a href="team.html">Team</a>
-              <a href="404.html">404</a>
+            <div class="dropdown-menu mega-menu" id="pagesDropdownMenu">
+              <div class="mega-menu-content">
+                <div class="mega-menu-categories tech-categories">
+                  <ul>
+                    <li><a class="active" href="/contact.html">Contact Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
           <a href="#enquiry" class="quick-enquiry-btn">
