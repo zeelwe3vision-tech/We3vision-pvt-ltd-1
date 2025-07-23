@@ -5019,6 +5019,7 @@ html.is-animating .mil-menu-frame {
     margin: 0 auto;
     max-width: 1100px;
 }
+
 .ar-timeline-v2:before {
     content: '';
     position: absolute;
@@ -5266,7 +5267,7 @@ html.is-animating .mil-menu-frame {
 }
 /* Technologies We Use Section Styles */
 .tech-section {
-  background: linear-gradient(135deg, #f5f7fa 0%, #f7e1f5 40%, #e0f7fa 100%);
+  /* background: linear-gradient(135deg, #f5f7fa 0%, #f7e1f5 40%, #e0f7fa 100%); */
   margin-bottom: 40px;
   text-align: center;
 }
@@ -6602,106 +6603,4 @@ footer svg.mil-arrow path {
   color: #057999 !important;
   font-weight: bold;
   word-spacing: 2px;
-}
-/* --- Quick Enquiry Button: Bulletproof Responsive --- */
-.quick-enquiry-btn {
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-  padding: 0 18px;
-  height: 44px;
-  min-width: 100px;
-  background: linear-gradient(120deg, #f3e7fa 0%, #f9c6c3 60%, #d1d8f7 100%);
-  border-radius: 99px;
-  border: none;
-  text-decoration: none;
-  font-family: inherit;
-  font-size: 1rem;
-  font-weight: 700;
-  color: #181828;
-  letter-spacing: 0.13em;
-  margin-left: 16px;
-  box-sizing: border-box;
-  transition: all 0.2s;
-  overflow: hidden;
-}
-
-.qe-text {
-  flex: 1 1 auto;
-  text-align: left;
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 0.13em;
-  padding-left: 8px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.qe-circle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 8px;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #2a174d 0%, #3a2067 60%, #e16b8c 100%);
-  flex-shrink: 0;
-  box-shadow: 0 2px 8px 0 rgba(58,32,103,0.10);
-  transition: width 0.2s, height 0.2s;
-}
-
-.qe-circle svg {
-  width: 18px;
-  height: 18px;
-  transition: width 0.2s, height 0.2s;
-}
-
-/* Tablet */
-@media (max-width: 900px) {
-  .quick-enquiry-btn {
-    height: 36px;
-    min-width: 70px;
-    padding: 0 8px;
-    font-size: 0.9rem;
-    margin-left: 8px;
-  }
-  .qe-text {
-    font-size: 0.9rem;
-    padding-left: 4px;
-  }
-  .qe-circle {
-    width: 22px;
-    height: 22px;
-    margin-left: 4px;
-  }
-  .qe-circle svg {
-    width: 12px;
-    height: 12px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-  .quick-enquiry-btn {
-    height: 28px;
-    min-width: 40px;
-    padding: 0 4px;
-    font-size: 0.7rem;
-    margin-left: 4px;
-  }
-  .qe-text {
-    font-size: 0.7rem;
-    padding-left: 2px;
-  }
-  .qe-circle {
-    width: 14px;
-    height: 14px;
-    margin-left: 2px;
-  }
-  .qe-circle svg {
-    width: 7px;
-    height: 7px;
-  }
 }
