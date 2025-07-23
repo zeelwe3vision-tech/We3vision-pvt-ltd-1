@@ -1392,4 +1392,3 @@ $(function () {
     window.addEventListener('scroll', animateParallax);
     animateParallax();
   })();
-  
