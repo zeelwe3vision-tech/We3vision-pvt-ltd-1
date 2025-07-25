@@ -1392,3 +1392,88 @@ $(function () {
     window.addEventListener('scroll', animateParallax);
     animateParallax();
   })();
+
+//   form section
+emailjs.init("LsKNt382V8Rfdzzb4");
+
+        const form = document.getElementById('contactForm');
+        const errorMessage = document.getElementById('errorMessage');
+
+        function showError(message) {
+            errorMessage.textContent = message;
+            errorMessage.style.display = 'block';
+        }
+
+        function hideError() {
+            errorMessage.style.display = 'none';
+        }
+
+        function showToast(message, type = 'success') {
+            Toastify({
+                text: message,
+                duration: 3000,
+                gravity: "top",
+                position: "right",
+                backgroundColor: type === 'success' ? "#10b981" : "#ef4444",
+                stopOnFocus: true,
+            }).showToast();
+        }
+
+        function resetForm() {
+            form.reset();
+            hideError();
+        }
+
+        async function handleSubmit(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(form);
+            const data = {
+                fullName: formData.get('fullName'),
+                email: formData.get('email'),
+                projectName: formData.get('projectName'),
+                mobile: formData.get('mobile'),
+                message: formData.get('message')
+            };
+
+            // Validation
+            if (!data.fullName || !data.email || !data.projectName || !data.mobile || !data.message) {
+                showError("Please fill all the fields.");
+                return;
+            }
+
+            const submitBtn = form.querySelector('.submit-btn');
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+
+            try {
+                // Send email via EmailJS
+                await emailjs.sendForm(
+                    "service_waf05y7", // your service ID
+                    "template_yjjjlyt", // your template ID
+                    form,
+                    "LsKNt382V8Rfdzzb4" // your public key
+                );
+
+                    // Open WhatsApp with pre-filled message
+    const message = `Name: ${data.fullName}%0AEmail: ${data.email}%0AProject Name: ${data.projectName}%0AMobile: ${data.mobile}%0AMessage: ${data.message}`;
+    const whatsappURL = `https://wa.me/+917383216096?text=${message}`;
+    window.open(whatsappURL, '_blank');
+
+
+                showToast("Message sent successfully!");
+                resetForm();
+                
+            } catch (error) {
+                console.error("Form submission error:", error);
+                showToast("Failed to send message. Please try again.", "error");
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send Message →';
+            }
+        }
+
+        form.addEventListener('submit', handleSubmit);
+
+        // Clear error on input
+        form.addEventListener('input', hideError);
