@@ -1311,6 +1311,10 @@ $(function () {
       
           $dropdown.on('mouseenter', function() {
             clearTimeout(dropdownTimeout); // cancel any close timeout
+            
+            // Close all other dropdowns first
+            $('.header-bar .dropdown').not($dropdown).removeClass('open');
+            
             $dropdown.addClass('open');
           });
       
